@@ -1,12 +1,12 @@
 # mkdocs file for generating microsite
 site_name: Generative AI Architecture Patterns
 nav:
-  - Home: index.md
-  = Glossary: glossary.md
-  - Patterns:
-    - Agent: patterns/agent.md
-    - Similarity: patterns/similarity.md
-    - Knowledge Representation: patterns/knowledge-representation.md
+   - Home: index.md
+   - Glossary: glossary.md
+   - Patterns:
+     - Agent: patterns/agent.md
+     - Similarity: patterns/similarity.md
+     - Knowledge Representation: patterns/knowledge-representation.md
 repo_name: 'Go to GitHub'
 repo_url: 'https://github.com/dmccreary/genai-arch-patterns'
 edit_uri: 'blob/master/docs'
