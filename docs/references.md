@@ -12,3 +12,18 @@
 
 1. [How vector databases can revolutionize our relationship with generative AI](https://venturebeat.com/ai/how-vector-databases-can-revolutionize-our-relationship-with-generative-ai/)
 2. [Vector Databases and Their Importance in Generative AI: An Explained Guide](https://deshpandetanmay.medium.com/vector-databases-and-their-importance-in-generative-ai-an-explained-guide-8f67fb44c602)
+
+## Vector Databases
+
+1. [Chroma]
+2. [Milvus]
+3. [Qdrant](https://qdrant.tech/)
+4. Pinecone
+5. Weaviate
+
+
+
+Deep Lake.
+Qdrant.
+Elasticsearch.
+Vespa.

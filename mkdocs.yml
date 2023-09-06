@@ -2,11 +2,16 @@
 site_name: Generative AI Architecture Patterns
 nav:
    - Home: index.md
-
+   - Concepts:
+     - Agents: concepts/agents.md
+     - Embeddings: concepts/embeddings.md
+     - Concept Index: concepts/concept-index.md
+     - Knowledge Graph: concepts/knowledge-graph.ms
    - Patterns:
      - Agent: patterns/agent.md
-     - Similarity: patterns/similarity.md
+     - Code Interpreter: patterns/code-interpreter.md
      - Knowledge Representation: patterns/knowledge-representation.md
+     - Similarity: patterns/similarity.md
    - Talks: talks.md
    - Contributing: contributing.md
    - Glossary: glossary.md
