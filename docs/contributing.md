@@ -1,6 +1,15 @@
 # Contributing
 
-We would like to hear what architecture patterns you feel are important for generative AI.  
+We would like to hear what architecture patterns you feel are important for generative AI.
+
+## Contributing a New Generative AI Pattern
+
+If you have found that you have found a pattern of consistently solving a business problem in a new way that we have not already described in our pattern library, please let us know!  Here is what you need to provide us:
+
+1. The pattern name.
+2. A description of when you would use that pattern.  This can include the type of problem you solve, how you solve it and why this pattern can be superior to other approaches.
+3. Any other related patterns.
+4. Other notes on how you picked the name of the pattern and the description.
 
 ## How to Contribute
 

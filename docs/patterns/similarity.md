@@ -8,6 +8,7 @@ In this architecture, the generative model is trained on existing data and a sim
   - Content-Based Filtering
   - k-NN (k-Nearest Neighbors) for Generation
   - Metric Learning
+  - [Concept Index](glossary.md#concept-index)
 
 ##### Examples in Business Applications
 
