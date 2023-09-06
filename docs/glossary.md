@@ -26,6 +26,12 @@ The process of auditing the use of agents within a generative AI-driven architec
 
 A product was released by [OpenAI](http://openai.com)](http://openai.com) on November 30th, 2023.  ChatGPT is wildly credited as the program that raised awareness to the potential of generative AI applications.
 
+#### Concept Index
+
+An index that allows for fast comparison of any item to other similar items.
+
+Concept indexes are usually implemented using embeddings and vector databases.
+
 #### Generative AI
 
 A category of artificial intelligence techniques and models that aim to create new and original data, such as images, text, audio, or other forms of content, by learning patterns from existing data.
