@@ -4,11 +4,17 @@ nav:
    - Home: index.md
    - About This Book: about.md
    - Concepts:
+     - Introduction: concepts/index.md
+     - Large-language Models: concepts/large-language-models.md
      - Agents: concepts/agents.md
+     - Chatbots: concepts/chatbots.md
      - Embeddings: concepts/embeddings.md
      - Concept Index: concepts/concept-index.md
      - Knowledge Graph: concepts/knowledge-graph.ms
    - Patterns:
+     - Introduction: patterns/index.md
+     - Prompt Enrichment: patterns/prompt-enrichment.md
+     - Finetuning: patterns/finetuning.md
      - Agent: patterns/agent.md
      - Code Interpreter: patterns/code-interpreter.md
      - Knowledge Representation: patterns/knowledge-representation.md
