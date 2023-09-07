@@ -1,4 +1,4 @@
-# Embeddings
+# Similarity and Embeddings
 
 Large-language models 
 

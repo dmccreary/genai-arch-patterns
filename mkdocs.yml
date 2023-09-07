@@ -2,6 +2,7 @@
 site_name: Generative AI Architecture Patterns
 nav:
    - Home: index.md
+   - About This Book: about.md
    - Concepts:
      - Agents: concepts/agents.md
      - Embeddings: concepts/embeddings.md

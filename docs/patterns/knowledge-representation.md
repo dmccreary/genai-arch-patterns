@@ -9,7 +9,7 @@ In this architecture, the generative model is integrated with a knowledge repres
   - Rule-Based Systems
   - Memory Networks
 
-##### Examples in Business Applications
+## Examples in Business Applications
 
 1. **Legal Document Generation**: By incorporating knowledge about legal terminology and structure, businesses can automatically generate legal documents that are not only syntactically correct but also adhere to legal norms and standards.
 
