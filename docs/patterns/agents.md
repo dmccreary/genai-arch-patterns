@@ -9,7 +9,7 @@ In this architecture, the agent is either embedded within the generative model o
   - Multi-Agent Systems
   - Decision Trees for Generation
 
-##### Examples in Business Applications
+## Examples in Business Applications
 
 1. **Automated Content Curation**: An agent can autonomously generate and curate content based on real-time user behavior and feedback, improving engagement and user experience.
   
