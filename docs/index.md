@@ -24,7 +24,9 @@ Table of Contents
 
 ## End Matter
 
-[Glossary](glossary.md)
-[Contributing](contributing.md)
-[References](references.md)
+1. [Glossary](glossary.md)
+2. [License](https://raw.githubusercontent.com/dmccreary/genai-arch-patterns/main/LICENSE)
+3. [Contributing](contributing.md)
+4. [References](references.md)
+5. [How We Built This Site](how-we-built-this-site.md)
 
