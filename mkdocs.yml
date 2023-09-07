@@ -10,12 +10,12 @@ nav:
      - Chatbots: concepts/chatbots.md
      - Embeddings: concepts/embeddings.md
      - Concept Index: concepts/concept-index.md
-     - Knowledge Graph: concepts/knowledge-graph.ms
+     - Knowledge Graph: concepts/knowledge-graph.md
    - Patterns:
      - Introduction: patterns/index.md
      - Prompt Enrichment: patterns/prompt-enrichment.md
      - Finetuning: patterns/finetuning.md
-     - Agent: patterns/agent.md
+     - Agent: patterns/agents.md
      - Code Interpreter: patterns/code-interpreter.md
      - Knowledge Representation: patterns/knowledge-representation.md
      - Similarity: patterns/similarity.md
