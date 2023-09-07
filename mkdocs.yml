@@ -44,9 +44,9 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
   - pymdownx.superfences
-
   # Google Analytics MEASUREMENT ID: G-QD0XE8V1HL
+  # https://analytics.google.com/analytics/web/?authuser=0#/p406011100/reports/intelligenthome
   extra:
-  analytics:
-    provider: google
-    property: G-QD0XE8V1HL
+    analytics:
+      provider: google
+      property: G-QD0XE8V1HL
