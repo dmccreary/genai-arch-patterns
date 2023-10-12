@@ -11,6 +11,8 @@ nav:
      - Embeddings: concepts/embeddings.md
      - Concept Index: concepts/concept-index.md
      - Knowledge Graph: concepts/knowledge-graph.md
+     - Cosine Similarity: concepts/cosine-similarity.md
+     - Vector Database: concepts/vector-database.md
    - Patterns:
      - Introduction: patterns/index.md
      - Prompt Enrichment: patterns/prompt-enrichment.md
@@ -18,6 +20,7 @@ nav:
      - Agent: patterns/agents.md
      - Code Interpreter: patterns/code-interpreter.md
      - Knowledge Representation: patterns/knowledge-representation.md
+     - RAG: patterns/rag.md
      - Similarity: patterns/similarity.md
    - Talks: talks.md
    - Contributing: contributing.md
