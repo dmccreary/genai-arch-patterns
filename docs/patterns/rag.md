@@ -9,6 +9,7 @@ with general knowledge.
 
 Many RAG designs focus on the use of a [Vector Database](../concepts/vector-database.md) to find text that is similar to a given prompt.
 
+RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia.
 
 ## References
 

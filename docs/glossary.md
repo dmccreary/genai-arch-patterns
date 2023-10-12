@@ -65,6 +65,25 @@ In supervised learning, algorithms learn from labeled examples, making predictio
 
 Key components of machine learning include feature extraction, model training, validation, and testing. Popular machine learning techniques include decision trees, neural networks, support vector machines, and more. Machine learning has applications in diverse fields, such as image recognition, natural language processing, recommendation systems, autonomous vehicles, and medical diagnosis, driving advancements in technology and automation.
 
+#### Non-Parametric Model
+
+Algorithms that do not make strong assumptions about the form of the mapping function are called nonparametric machine learning algorithms.
+
+Non-parametric models are often use text retrieval-based systems such as search engines.  The input strings can vary in length and are not
+restricted to a fixed token count as we see in LLMs.
+
+* [Machine Learning Mastery](https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/)
+
+#### Parametric Model
+
+A learning model that summarizes data with a set of parameters of fixed size.
+
+For example a Deep Neural Network (DNN) takes is a parametric model that takes in a fixed number of input parameters.  No matter how much training data we provide a parametric model, it won’t change how many parameters it needs to generate a sequence of tokens.
+
+Examples of parametric machine learning algorithms include: logistic regression and neural networks.
+
+See also: [Non Parametric Models](./non-parametric-model)
+
 #### Safety (Agents)
 
 The processes involved in ensuring that generative AI systems respond with appropriate content and without bias.
@@ -93,5 +112,8 @@ Security in the context of software agents refers to the set of measures, protoc
 
 Security considerations for software agents are essential to maintain the integrity, availability, and confidentiality of data and systems while enabling the benefits of autonomous and intelligent agent-based systems.
 
-
 #### Similarity
+
+#### Seq2Seq Model
+
+Any machine learning model that takes in a sequence of tokens and also returns a sequence of tokens.
