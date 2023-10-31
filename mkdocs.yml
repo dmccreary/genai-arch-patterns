@@ -36,6 +36,7 @@ theme:
   name: material
   feature:
     tabs: false
+    - content.code.copy
 markdown_extensions:
   - admonition
   - pymdownx.details  
