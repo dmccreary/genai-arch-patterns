@@ -34,9 +34,17 @@ edit_uri: 'blob/master/docs'
 copyright: 'Copyright &copy; 2023 Dan McCreary'
 theme:
   name: material
-  feature:
-    tabs: false
+  include_sidebar: true
+  features:
     - content.code.copy
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    # this adds the prev and next icons in the footer
+    - navigation.footer
 markdown_extensions:
   - admonition
   - pymdownx.details  
