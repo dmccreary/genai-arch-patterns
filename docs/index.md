@@ -1,8 +1,10 @@
 # Generative AI Architecture Patterns
 
+![banner](./img/banner.png)
+
 Table of Contents
 
-[About this book](about.md)
+[About this website](about.md)
 
 ## Part 1: Generative AI Concepts
 
