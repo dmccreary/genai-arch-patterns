@@ -49,6 +49,15 @@ It involves encoding real-world knowledge, facts, concepts, relationships, and r
 
 Knowledge representation methods vary from symbolic approaches, such as logic-based languages and semantic networks, to more recent techniques involving probabilistic graphical models and neural networks. Effective knowledge representation is crucial for enabling AI systems to store, retrieve, and utilize information effectively, facilitating tasks like natural language understanding, expert systems, reasoning, planning, and problem-solving.
 
+#### LangChain
+
+An open source framework that puts large-language models (LLMs) and generative AI at the center of software development.
+
+LangChain lets software developers integrate LLMs other external components to develop applications.
+
+* [LangChain website](https://www.langchain.com/)
+* [LangChain Python Docs Introduction](https://python.langchain.com/docs/get_started/introduction)
+
 #### Language Model
 
 * also known as: Large-Language Model
