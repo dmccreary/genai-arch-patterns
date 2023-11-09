@@ -20,10 +20,11 @@
 3. [Qdrant](https://qdrant.tech/)
 4. Pinecone
 5. Weaviate
-
-
-
 Deep Lake.
 Qdrant.
 Elasticsearch.
 Vespa.
+
+## Economic Impact of Generative AI
+
+* [Generative AI could raise global GDP by 7%](https://www.goldmansachs.com/intelligence/pages/generative-ai-could-raise-global-gdp-by-7-percent.html) - Goldman Sachs - April 5th, 2032
