@@ -198,3 +198,27 @@
 198,Physical Data Model,195
 199,Entity-Relationship Modeling,195
 200,Unified Modeling Language,195
+201,Graph Databases,18
+202,Key-Value Stores,18
+203,Column-Family Stores,18
+204,Document Stores,18
+205,RDF Database,201
+206,Triple Store,205
+207,Labeled Property Graph,201
+208,Knowledge Graph,201|194
+209,CAP Theorem,18|27
+210,Eventual Consistency,205
+211,BASE Properties,205|27
+212,Sharding,18|125
+213,Replication in NoSQL,18|123
+214,NoSQL Query Languages,18|113
+215,Indexing in NoSQL,18|125
+216,NoSQL Data Models,18
+217,Polyglot Persistence,18
+218,NoSQL Scalability,18|125
+219,NoSQL Use Cases,18
+220,Consistency Models,205
+221,Data Partitioning in NoSQL,208
+222,NoSQL Performance Optimization,213
+223,NoSQL vs Relational Databases,17|214
+224,NoSQL Security Practices,41|201|202|203|204
