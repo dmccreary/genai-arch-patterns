@@ -22,6 +22,9 @@ nav:
      - Knowledge Representation: patterns/knowledge-representation.md
      - RAG: patterns/rag.md
      - Similarity: patterns/similarity.md
+   - Simulations:
+     - Knowledge Graph:
+       - Dependency Graph: sims/graph/index.md
    - Talks: talks.md
    - Contributing: contributing.md
    - Glossary: glossary.md
