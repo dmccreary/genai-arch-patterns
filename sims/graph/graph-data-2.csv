@@ -1,122 +1,220 @@
-ConceptID,ConceptName,DependencyList,CategoryID,CategoryLabel
-1,Ohm's Law,2|3|4,1,Fundamental Concepts
-2,Voltage,7,1,Fundamental Concepts
-3,Current,7,1,Fundamental Concepts
-4,Resistance,101,1,Fundamental Concepts
-5,Power,2|3,1,Fundamental Concepts
-6,Energy,5|102,1,Fundamental Concepts
-7,Electric charge,120,1,Fundamental Concepts
-8,Conductors,7,1,Fundamental Concepts
-9,Insulators,7,1,Fundamental Concepts
-10,Capacitance,2|7,1,Fundamental Concepts
-11,Inductance,3|104,1,Fundamental Concepts
-12,Kirchhoff's Current Law,3,4,Circuit Analysis Techniques
-13,Kirchhoff's Voltage Law,2,4,Circuit Analysis Techniques
-14,Direct current,3,1,Fundamental Concepts
-15,Alternating current,3|32,5,AC Circuit Concepts
-16,Series circuits,1|4|2|3,11,Types of Circuits
-17,Parallel circuits,1|4|2|3,11,Types of Circuits
-18,Combination circuits,16|17,11,Types of Circuits
-19,Voltage divider,16|1,11,Types of Circuits
-20,Current divider,17|1,11,Types of Circuits
-21,Thevenin's theorem,2|3|4|16|17,4,Circuit Analysis Techniques
-22,Norton's theorem,2|3|4|16|17,4,Circuit Analysis Techniques
-23,Superposition theorem,106|2|3|1,4,Circuit Analysis Techniques
-24,Maximum power Transfer,21|1|5,1,Fundamental Concepts
-25,Mesh analysis,13|16,4,Circuit Analysis Techniques
-26,Nodal analysis,12|17,4,Circuit Analysis Techniques
-27,RMS voltage,15|2,5,AC Circuit Concepts
-28,RMS current,15|3,5,AC Circuit Concepts
-29,Phasors,15|32|107,5,AC Circuit Concepts
-30,Impedance,4|31|29,5,AC Circuit Concepts
-31,Reactance,10|11|32,5,AC Circuit Concepts
-32,Frequency,15|102,5,AC Circuit Concepts
-33,Resonance,30|32|31,5,AC Circuit Concepts
-34,Bandwidth,33|32,5,AC Circuit Concepts
-35,Quality factor,33|6,2,Passive Components
-36,Time constant,10|4|11,2,Passive Components
-37,Transients in RC circuits,36|10|4,6,Transient Analysis
-38,Transients in RL circuits,36|11|4,6,Transient Analysis
-39,Transients in RLC circuits,37|38|10|11,6,Transient Analysis
-40,Steady-state analysis,37|38|39|102,6,Transient Analysis
-41,AC power,15|2|3|5,9,Power Electronics
-42,Complex power,41|30|29,9,Power Electronics
-43,Active power,42,9,Power Electronics
-44,Reactive power,42,9,Power Electronics
-45,Apparent power,42,9,Power Electronics
-46,Power factor,43|45,9,Power Electronics
-47,Impedance matching,30|24,9,Power Electronics
-48,Bode plots,108|52,5,AC Circuit Concepts
-49,Nyquist criterion,50|108,10,Control Systems and Stability
-50,Stability,53|109,10,Control Systems and Stability
-51,Poles and zeros,52|107,10,Control Systems and Stability
-52,Transfer function,109,10,Control Systems and Stability
-53,Feedback,54|109,10,Control Systems and Stability
-54,Operational amplifiers,73|77,8,Amplifiers and Analog Circuits
-55,Differential amplifier,54,8,Amplifiers and Analog Circuits
-56,Inverting amplifier,54,8,Amplifiers and Analog Circuits
-57,Non-inverting amplifier,54,8,Amplifiers and Analog Circuits
-58,Summing amplifier,54,8,Amplifiers and Analog Circuits
-59,Integrator,54|10,11,Types of Circuits
-60,Differentiator,54|10,11,Types of Circuits
-61,Comparator,54,11,Types of Circuits
-62,Voltage follower,54,11,Types of Circuits
-63,Negative feedback,53|50,10,Control Systems and Stability
-64,Positive feedback,53|50,10,Control Systems and Stability
-65,Diodes,110,3,Active Components and Semiconductor Devices
-66,Zener diodes,65,3,Active Components and Semiconductor Devices
-67,Rectification,65,9,Power Electronics
-68,Half-wave rectifier,67|65,9,Power Electronics
-69,Full-wave rectifier,67|65,9,Power Electronics
-70,Bridge rectifier,69,9,Power Electronics
-71,Clipping circuits,65,11,Types of Circuits
-72,Clamping circuits,65,11,Types of Circuits
-73,Transistors,110,3,Active Components and Semiconductor Devices
-74,Bipolar junction transistor,73,3,Active Components and Semiconductor Devices
-75,Field effect transistor,73,3,Active Components and Semiconductor Devices
-76,Switching circuits,73,9,Power Electronics
-77,Amplifiers,73|54,8,Amplifiers and Analog Circuits
-78,Small signal analysis,73|77,8,Amplifiers and Analog Circuits
-79,Gain,77,8,Amplifiers and Analog Circuits
-80,Saturation,73,3,Active Components and Semiconductor Devices
-81,Cutoff,73,3,Active Components and Semiconductor Devices
-82,Biasing,73,3,Active Components and Semiconductor Devices
-83,Load line analysis,73|82,4,Circuit Analysis Techniques
-84,Common-emitter amplifier,73|77,8,Amplifiers and Analog Circuits
-85,Common-base amplifier,73|77,8,Amplifiers and Analog Circuits
-86,Common-collector amplifier,73|77,8,Amplifiers and Analog Circuits
-87,Darlington pair,73|77,8,Amplifiers and Analog Circuits
-88,Cascaded amplifiers,77,8,Amplifiers and Analog Circuits
-89,Differential pairs,73|55,8,Amplifiers and Analog Circuits
-90,Coupling capacitors,10,2,Passive Components
-91,Decoupling capacitors,10,2,Passive Components
-92,Filters,10|11|32,7,Signal Processing and Filters
-93,Low-pass filters,92,7,Signal Processing and Filters
-94,High-pass filters,92,7,Signal Processing and Filters
-95,Band-pass filters,92,7,Signal Processing and Filters
-96,Band-stop filters,92,7,Signal Processing and Filters
-97,Active filters,92|54,7,Signal Processing and Filters
-98,Passive filters,92,7,Signal Processing and Filters
-99,Voltage regulators,65|66|73,9,Power Electronics
-100,Pulse-width modulation,76,7,Signal Processing and Filters
-101,Resistivity,115,1,Fundamental Concepts
-102,Time,116,1,Fundamental Concepts
-103,Capacitors,10|7,2,Passive Components
-104,Magnetic fields,3,1,Fundamental Concepts
-105,Conservation of energy,6,1,Fundamental Concepts
-106,Linearity,117,4,Circuit Analysis Techniques
-107,Complex numbers,118,1,Fundamental Concepts
-108,Frequency response,32|92,5,AC Circuit Concepts
-109,Control systems,53|52,10,Control Systems and Stability
-110,Semiconductor physics,111,3,Active Components and Semiconductor Devices
-111,Solid-state physics,119,1,Fundamental Concepts
-112,Elementary charge,120,1,Fundamental Concepts
-113,Conservation laws,119,1,Fundamental Concepts
-114,P-N junctions,110,3,Active Components and Semiconductor Devices
-115,Material properties,119,1,Fundamental Concepts
-116,Fundamental concepts,,1,Fundamental Concepts
-117,Mathematical principles,118,1,Fundamental Concepts
-118,Mathematics,116,1,Fundamental Concepts
-119,Physics,116,1,Fundamental Concepts
-120,Atomic structure,119,1,Fundamental Concepts
-121,MOSFET,75,3,Active Components and Semiconductor Devices
+1,Data,201,1
+2,Information,1,1
+3,Knowledge,2,1
+4,Data Types,1,1
+5,Data Structures,4,1
+6,Data Storage,5,3
+7,Data Processing,5,4
+8,Data Collection,1,4
+9,Data Input,8,4
+10,Data Output,7,4
+11,Data Flow,9|10,4
+12,Data Lifecycle,8|6|7|10,5
+13,Data Modeling,5,2
+14,Data Analysis,7,7
+15,Data Visualization,14,7
+16,Database,5|6,3
+17,Relational Databases,16,3
+18,Non-relational Databases,16,3
+19,Structured Data,1,3
+20,Unstructured Data,1,3
+21,Semi-structured Data,1,3
+22,Data Warehouse,16,3
+23,Data Mart,22,3
+24,Data Lake,16,3
+25,Data Integration,16|7,4
+26,Data Migration,16|25,4
+27,Data Transformation,7|25,4
+28,Data Quality,1,5
+29,Data Validation,28,5
+30,Data Cleansing,28,5
+31,Data Profiling,28,5
+32,Data Governance,28,5
+33,Data Management,32,5
+34,Data Architecture,33,2
+35,Enterprise Architecture,34,2
+36,Metadata,1,2
+37,Master Data,36,5
+38,Transactional Data,1,3
+39,Operational Data,1,3
+40,Analytical Data,1,3
+41,Data Security,1,6
+42,Data Privacy,41,6
+43,Data Compliance,41,6
+44,Data Standards,33,5
+45,Data Policies,33,5
+46,Data Stewardship,33,5
+47,Data Ownership,33,5
+48,Data Lineage,36,5
+49,Data Catalog,36,5
+50,Data Discovery,49,5
+51,Data Classification,36,5
+52,Data Segmentation,51,5
+53,Data Encryption,41,6
+54,Data Masking,41,6
+55,Data Anonymization,41,6
+56,Data Retention,45,5
+57,Data Disposal,56,5
+58,Information Lifecycle Management,12|45,5
+59,Data Strategy,33,10
+60,Data Governance Frameworks,32,5
+61,Data Governance Models,32,5
+62,Data Stewardship Roles,46,5
+63,Chief Data Officer,33,10
+64,Data Literacy,33,10
+65,Data Culture,33,10
+66,Data-Driven Decision Making,14,10
+67,Business Intelligence,14|16,7
+68,Data Analytics,14,7
+69,Big Data,1,8
+70,Data Mining,68,7
+71,Data Science,68,7
+72,Data Engineering,33,9
+73,Data Visualization Techniques,15,7
+74,Data Interpretation,14,7
+75,Predictive Analytics,68,7
+76,Prescriptive Analytics,68,7
+77,Descriptive Analytics,68,7
+78,Diagnostic Analytics,68,7
+79,Artificial Intelligence,71,7
+80,Machine Learning,71,7
+81,Deep Learning,80,7
+82,Neural Networks,81,7
+83,Natural Language Processing,80,7
+84,Data Ethics,41,10
+85,Data Bias,84,10
+86,Data Quality Metrics,28,5
+87,Data Harmonization,25,5
+88,Data Enrichment,25,5
+89,Data Standardization,44,5
+90,Data Virtualization,25,9
+91,Data Federation,25,9
+92,Data Orchestration,25,9
+93,Data Pipelines,25,9
+94,Extract, Transform, Load Processes,25|27,4
+95,Real-Time Data Processing,7,4
+96,Batch Processing,7,4
+97,Stream Processing,7,4
+98,In-Memory Data Processing,7,4
+99,Edge Computing,95,4
+100,Internet of Things Data,99,3
+101,Sensor Data,100,3
+102,Cloud Computing,6,3
+103,On-Premises Data Storage,6,3
+104,Hybrid Cloud,102|103,3
+105,Public Cloud,102,3
+106,Private Cloud,102,3
+107,Multi-Cloud Strategy,102,3
+108,Software as a Service,102,3
+109,Platform as a Service,102,3
+110,Infrastructure as a Service,102,3
+111,Data as a Service,102,3
+112,Data Access,41,6
+113,Application Programming Interfaces,112,9
+114,Microservices Architecture,113,9
+115,Service-Oriented Architecture,113,9
+116,Enterprise Service Bus,115,9
+117,Middleware,115,9
+118,Data Lakes,24,3
+119,Data Lakehouse,24|22,3
+120,Data Swamps,24,3
+121,Data Silos,25,5
+122,Data Integration Tools,25,9
+123,Data Replication,25,9
+124,Data Synchronization,25,9
+125,Data Indexing,16,9
+126,Data Partitioning,16,9
+127,Data Sharding,16,9
+128,High Availability Systems,6,3
+129,Disaster Recovery,128,3
+130,Backup and Restore Procedures,128,3
+131,Data Compression,6,3
+132,Data Decompression,131,3
+133,Data Security Protocols,41,6
+134,Identity and Access Management,41,6
+135,Role-Based Access Control,134,6
+136,Authentication Mechanisms,134,6
+137,Authorization Processes,134,6
+138,Data Breach Response,41,6
+139,Incident Management,138,6
+140,Security Information and Event Management,138,6
+141,Intrusion Detection Systems,138,6
+142,Firewall Protection,138,6
+143,Encryption Standards,53,6
+144,Data Privacy Impact Assessment,42,6
+145,Privacy by Design,42,6
+146,Consent Management,42,6
+147,Data Subject Rights,42,6
+148,Data Loss Prevention,41,6
+149,Data Protection Officer,42,6
+150,Data Compliance Regulations,43,6
+151,General Data Protection Regulation,150,6
+152,Health Insurance Portability and Accountability Act,150,6
+153,Data Auditing,43,6
+154,Data Controls,43,6
+155,Data Risk Management,43,6
+156,Data Compliance Audits,153,6
+157,Data Supply Chain,25,10
+158,Data Ecosystem,33,10
+159,Data Fabric,25,10
+160,Data Mesh,25,10
+161,Event-Driven Architecture,115,9
+162,Data Monetization,33,10
+163,Data Marketplace,162,10
+164,Data Brokerage,163,10
+165,Data Asset Valuation,162,10
+166,Data Ownership Models,47,5
+167,Data Licensing,47,5
+168,Open Data Initiatives,33,10
+169,Data Philanthropy,168,10
+170,Data for Social Good,168,10
+171,Data Legislation,150,6
+172,Data Sovereignty,171,6
+173,Data Localization,171,6
+174,Data Governance Maturity Models,32,5
+175,Data Quality Assessment,28,5
+176,Data Governance Tools,32,5
+177,Data Architecture Tools,34,2
+178,Enterprise Data Modeling Tools,13,2
+179,Data Management Platforms,33,5
+180,Data Competency,33,10
+181,Data Democratization,64,10
+182,Data Literacy Programs,64,10
+183,Data Competency Centers,180,10
+184,Data Stewardship Committees,46,5
+185,Data Ethics Committees,84,10
+186,Data Culture Change Management,65,10
+187,Data Literacy Training,64,10
+188,Data Competency Frameworks,180,10
+189,Data Strategy Development,59,10
+190,Data Policy Development,45,5
+191,Data Standard Development,44,5
+192,Data Classification Schemes,51,5
+193,Data Taxonomy,51,2
+194,Data Ontology,51,2
+195,Semantic Data Modeling,13,2
+196,Conceptual Data Model,195,2
+197,Logical Data Model,195,2
+198,Physical Data Model,195,2
+199,Entity-Relationship Modeling,195,2
+200,Unified Modeling Language,195,2
+201,Mathematics,,1
+202,Document Databases,18,8
+203,Key-Value Stores,18,8
+204,Column-Family Stores,18,8
+205,Graph Databases,18,8
+206,CAP Theorem,18,8
+207,Eventual Consistency,205,8
+208,BASE Properties,205,8
+209,Sharding,18|125,8
+210,Replication in NoSQL,18|123,8
+211,NoSQL Query Languages,18|113,8
+212,Indexing in NoSQL,18|125,8
+213,NoSQL Data Models,18,8
+214,Polyglot Persistence,18,8
+215,NoSQL Scalability,18|125,8
+216,NoSQL Use Cases,18,8
+217,Consistency Models,205,8
+218,Data Partitioning in NoSQL,208,8
+219,NoSQL Performance Optimization,214,8
+220,NoSQL vs Relational Databases,17|18,8
