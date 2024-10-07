@@ -25,6 +25,9 @@ nav:
    - Simulations:
      - Knowledge Graph:
        - Dependency Graph: sims/graph/index.md
+       - prompts/knowledge-graph/index.md
+       - prompts/knowledge-graph/concept-dependancy.md
+       - prompts/knowledge-graph/concept-enumeration.md
    - Talks: talks.md
    - Contributing: contributing.md
    - Glossary: glossary.md
