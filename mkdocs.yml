@@ -5,6 +5,7 @@ nav:
    - About This Book: about.md
    - Concepts:
      - Introduction: concepts/index.md
+     - Terminology and Standards: concepts/architecture-standards.md
      - Large-language Models: concepts/large-language-models.md
      - Agents: concepts/agents.md
      - Chatbots: concepts/chatbots.md
