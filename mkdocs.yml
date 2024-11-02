@@ -25,10 +25,10 @@ nav:
      - Similarity: patterns/similarity.md
    - Simulations:
      - Knowledge Graph:
-       - Dependency Graph: sims/graph/index.md
-       - prompts/knowledge-graph/index.md
-       - prompts/knowledge-graph/concept-dependency.md
+       - Introduction: prompts/knowledge-graph/index.md
        - prompts/knowledge-graph/concept-enumeration.md
+       - prompts/knowledge-graph/concept-dependency.md
+       - prompts/knowledge-graph/concept-taxonomy.md
    - Talks: talks.md
    - Contributing: contributing.md
    - Glossary: glossary.md

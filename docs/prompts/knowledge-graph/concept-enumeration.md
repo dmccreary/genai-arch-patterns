@@ -2,7 +2,7 @@
 
 ## Prompt
 
-```
+```linenums="0"
 I am helping teach an undergraduate course on enterprise
 data architecture at a local university. I would like to understand the key
 concepts that need to be presented in this course and
@@ -17,9 +17,9 @@ Make sure that the concepts names are distinct and not synonyms.
 Start with the most basic foundational concepts and then
 proceed to the most complex concepts. Return just one concept per line.
 Avoid using acronyms or abbreviations.
+```
 
-
-I am helping teach an undergraduate course on enterprise data architecture at a local university. I would like to understand the key concepts that need to be presented in this course and the order in which they should be taught. Please create a list of the 200 most essential concepts in an undergraduate course on enterprise data architecture. For each concept, return the concept preferred label in a numbered list. Make sure that the concept names are distinct and not synonyms. Start with the most basic foundational concepts and then proceed to the most complex concepts. Return just one concept label per line. Avoid using acronyms or abbreviations.
+## Response
 
 ChatGPT o1-preview
 

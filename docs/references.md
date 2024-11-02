@@ -25,6 +25,11 @@ Qdrant.
 Elasticsearch.
 Vespa.
 
+## GenAI and Planning
+
+[LLMS STILL CAN’T PLAN; CAN LRMS?
+A PRELIMINARY EVALUATION OF OPENAI’S O1 ON PLANBENCH](https://www.arxiv.org/pdf/2409.13373)
+
 ## Economic Impact of Generative AI
 
 * [Generative AI could raise global GDP by 7%](https://www.goldmansachs.com/intelligence/pages/generative-ai-could-raise-global-gdp-by-7-percent.html) - Goldman Sachs - April 5th, 2032
