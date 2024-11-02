@@ -4,7 +4,7 @@
 
 ```
 Please suggest a taxonomy of about 10 classifiers
-or groups for these concepts
+or groups for these concepts.
 ```
 ## Response
 

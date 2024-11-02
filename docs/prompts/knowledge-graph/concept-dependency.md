@@ -1,6 +1,8 @@
 # Concept Dependency
 
 ## Prompt
+
+```linenums="0"
 Great job!  Our next step is to create a fully connected dependency graph.
 In this step, for each concept on this list, please create a new
 list of other concepts on which it depends.  If a concept
@@ -10,14 +12,18 @@ This will help us determine the teaching order of the concepts.
 
 Return the new list as a CSV file using the following format:
 
-The first column is a numeric concept ID you assigned,  the second column is the concept name, and the third column is a pipe-delimited list of the concept IDs that the concept depends upon.
+The first column is a numeric concept ID you assigned, 
+the second column is the concept name, and the third
+column is a pipe-delimited list of the concept IDs that the concept depends upon.
 
 Check your results to make sure that all concepts are connected to at least one other concept.
+```
 
 ## Response
 
 ChatGPT Thought for 51 seconds
 
+```csv
 ID,ConceptName,Dependencies
 201,Mathematics,
 1,Data,201
@@ -220,7 +226,7 @@ ID,ConceptName,Dependencies
 198,Physical Data Model,195
 199,Entity-Relationship Modeling,195
 200,Unified Modeling Language,195
-
+```
 
 
 
