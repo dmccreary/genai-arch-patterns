@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../knowledge-graph/">
-      
-      
-        <link rel="next" href="../vector-database/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Cosine Similarity - Generative AI Architecture Patterns</title>
+        <title>MCP (Model Context Protocol) Integration Pattern - Generative AI Architecture Patterns</title>
       
     
     
@@ -72,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cosine-similarity" class="md-skip">
+        <a href="#mcp-model-context-protocol-integration-pattern" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cosine Similarity
+              MCP (Model Context Protocol) Integration Pattern
             
           </span>
         </div>
@@ -282,8 +278,6 @@
       
   
   
-    
-  
   
   
     
@@ -315,296 +309,29 @@
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+  
+  
+    <a href="../../concepts/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Concepts
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Concepts
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../architecture-standards/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Terminology and Standards
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../large-language-models/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Large-language Models
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../agents/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Agents
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chatbots/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chatbots
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../embeddings/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Embeddings
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../concept-index/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Concept Index
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../knowledge-graph/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Knowledge Graph
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+        <span class="md-nav__icon md-icon"></span>
       
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Cosine Similarity
-  </span>
+    </a>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Cosine Similarity
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#cosine-similarity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cosine Similarity
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-concepts-and-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Concepts and Patterns
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      References
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../vector-database/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Vector Database
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -650,7 +377,7 @@
         
   
   
-    <a href="../../patterns/" class="md-nav__link">
+    <a href="../" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -902,6 +629,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -910,18 +639,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cosine-similarity" class="md-nav__link">
+  <a href="#when-to-use" class="md-nav__link">
     <span class="md-ellipsis">
-      Cosine Similarity
+      When to Use
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#related-concepts-and-patterns" class="md-nav__link">
+  <a href="#architecture-drawing" class="md-nav__link">
     <span class="md-ellipsis">
-      Related Concepts and Patterns
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
     </span>
   </a>
   
@@ -954,23 +692,41 @@
   
 
 
-  <h1>Cosine Similarity</h1>
-
-<h2 id="cosine-similarity">Cosine Similarity<a class="headerlink" href="#cosine-similarity" title="Permanent link">&para;</a></h2>
-<p>A measure of similarity between two non-zero vectors.</p>
-<p>Cosine similarity is the cosine of the angle between the vectors; that is, it is the dot product of the vectors divided by the product of their lengths.</p>
-<p>Calculation of the cosine similarity between a given vector and a set of possibly billions of vectors can be a time-consuming problem that is easily accelerated by FPGA hardware.</p>
-<h2 id="related-concepts-and-patterns">Related Concepts and Patterns<a class="headerlink" href="#related-concepts-and-patterns" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../embeddings/">Embeddings</a></li>
-<li><a href="../vector-database/">Vector Database</a></li>
-<li><a href="../patterns/rag.md">RAG</a></li>
-</ul>
+<h1 id="mcp-model-context-protocol-integration-pattern">MCP (Model Context Protocol) Integration Pattern<a class="headerlink" href="#mcp-model-context-protocol-integration-pattern" title="Permanent link">&para;</a></h1>
+<p>A standardization pattern that enables Large Language Models to securely connect with external data sources and tools through a unified protocol. MCP provides a consistent interface for LLMs to interact with various systems while maintaining security boundaries and proper access controls.</p>
+<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<p>Use this pattern when you need to connect LLMs to multiple external systems with standardized interfaces, when security and access control are critical, or when you want to create reusable integrations that work across different LLM providers. Essential for enterprise environments requiring controlled access to sensitive systems and data sources.</p>
+<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<p>The architecture shows LLMs connecting to various external systems through MCP servers, with a central MCP registry managing available resources and security policies.</p>
+<p><strong>Components:</strong>
+- LLM Client (200, 50)
+- MCP Registry (400, 50)
+- Database MCP Server (150, 200)
+- API MCP Server (300, 200)
+- File System MCP Server (450, 200)
+- Security Gateway (400, 150)
+- Resource Manager (550, 150)
+- External Database (150, 300)
+- External API (300, 300)
+- File Storage (450, 300)</p>
+<p><strong>Edges:</strong>
+- LLM Client → MCP Registry: "Resource Discovery"
+- MCP Registry → Security Gateway: "Access Validation"
+- Security Gateway → Database MCP Server: "Authenticated Request"
+- Security Gateway → API MCP Server: "Authenticated Request"
+- Security Gateway → File System MCP Server: "Authenticated Request"
+- Database MCP Server → External Database: "Query Execution"
+- API MCP Server → External API: "API Call"
+- File System MCP Server → File Storage: "File Operations"
+- Resource Manager → MCP Registry: "Resource Metadata"</p>
+<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<p>Agentic Orchestration Pattern, Enterprise Security Gateway Pattern, Tool-Augmented LLM Pattern</p>
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Cosine_similarity">Wikipedia Page on Cosine Similarity</a></li>
-<li><a href="https://xilinx.github.io/graphanalytics/cosinesim/index.html">Xilinx FPGA Cosine Similarity</a></li>
-</ul>
+<ol>
+<li><a href="https://modelcontextprotocol.io/docs">Model Context Protocol Specification</a> - 2024 - Anthropic - Official specification defining the MCP standard for connecting LLMs to external resources</li>
+<li><a href="https://docs.anthropic.com/claude/docs/mcp">Building Secure AI Integrations with MCP</a> - 2024 - Anthropic Documentation - Practical guide for implementing secure LLM integrations using MCP</li>
+<li><a href="https://github.com/modelcontextprotocol/servers">MCP Server Examples and Best Practices</a> - 2024 - GitHub - Collection of reference implementations and patterns for MCP server development</li>
+</ol>
 
 
 
@@ -1003,44 +759,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-          
-          <a href="../knowledge-graph/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Knowledge Graph">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              <div class="md-ellipsis">
-                Knowledge Graph
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../vector-database/" class="md-footer__link md-footer__link--next" aria-label="Next: Vector Database">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Vector Database
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">

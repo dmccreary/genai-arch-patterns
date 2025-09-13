@@ -1,0 +1,1586 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Top 10 Generative AI Architecture Patterns for Large Enterprises - Generative AI Architecture Patterns</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-QD0XE8V1HL"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-QD0XE8V1HL",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-QD0XE8V1HL",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#top-10-generative-ai-architecture-patterns-for-large-enterprises" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Generative AI Architecture Patterns" class="md-header__button md-logo" aria-label="Generative AI Architecture Patterns" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Generative AI Architecture Patterns
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Top 10 Generative AI Architecture Patterns for Large Enterprises
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/genai-arch-patterns" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Go to GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Generative AI Architecture Patterns" class="md-nav__button md-logo" aria-label="Generative AI Architecture Patterns" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Generative AI Architecture Patterns
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/genai-arch-patterns" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Go to GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About This Book
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../concepts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Concepts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Patterns
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Micro Simulations
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../talks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Talks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../references/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    References
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../how-we-built-this-site/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How We Built This Site
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-rag-retrieval-augmented-generation-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. RAG (Retrieval-Augmented Generation) Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. RAG (Retrieval-Augmented Generation) Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-agentic-orchestration-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Agentic Orchestration Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Agentic Orchestration Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mcp-model-context-protocol-integration-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. MCP (Model Context Protocol) Integration Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. MCP (Model Context Protocol) Integration Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fine-tuned-model-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fine-Tuned Model Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Fine-Tuned Model Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-federated-learning-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Federated Learning Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Federated Learning Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-multi-modal-ai-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Multi-Modal AI Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Multi-Modal AI Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-enterprise-security-gateway-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Enterprise Security Gateway Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Enterprise Security Gateway Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-model-versioning-and-ab-testing-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Model Versioning and A/B Testing Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Model Versioning and A/B Testing Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prompt-engineering-and-template-management-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Prompt Engineering and Template Management Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Prompt Engineering and Template Management Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-real-time-streaming-ai-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Real-Time Streaming AI Pattern
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Real-Time Streaming AI Pattern">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-drawing_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Drawing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-patterns_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Patterns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#references_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="top-10-generative-ai-architecture-patterns-for-large-enterprises">Top 10 Generative AI Architecture Patterns for Large Enterprises<a class="headerlink" href="#top-10-generative-ai-architecture-patterns-for-large-enterprises" title="Permanent link">&para;</a></h1>
+<h2 id="1-rag-retrieval-augmented-generation-pattern">1. RAG (Retrieval-Augmented Generation) Pattern<a class="headerlink" href="#1-rag-retrieval-augmented-generation-pattern" title="Permanent link">&para;</a></h2>
+<p>A foundational pattern that enhances Large Language Models by retrieving relevant information from external knowledge bases before generating responses. This pattern combines the generative capabilities of LLMs with the accuracy and freshness of retrieved documents, reducing hallucinations and providing source attribution.</p>
+<h3 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h3>
+<p>Use this pattern when you need to provide accurate, up-to-date information that may not be in the LLM's training data, when you require source attribution for generated content, or when working with proprietary or domain-specific knowledge bases. Ideal for customer support systems, knowledge management platforms, and technical documentation assistance.</p>
+<h3 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h3>
+<p>The architecture shows a user query flowing through an embedding service to a vector store for similarity search, retrieving relevant documents that are combined with the original query and sent to an LLM for final response generation.</p>
+<p><strong>Components:</strong>
+- User Interface (50, 50)
+- Query Processing Service (200, 50)
+- Embedding Service (350, 50)
+- Vector Store (500, 50)
+- Document Retrieval Service (650, 50)
+- LLM Service (500, 200)
+- Response Handler (200, 200)</p>
+<p><strong>Edges:</strong>
+- User Interface → Query Processing Service: "User Query"
+- Query Processing Service → Embedding Service: "Processed Query"
+- Embedding Service → Vector Store: "Query Embedding"
+- Vector Store → Document Retrieval Service: "Similar Documents"
+- Document Retrieval Service → LLM Service: "Retrieved Context"
+- Query Processing Service → LLM Service: "Original Query"
+- LLM Service → Response Handler: "Generated Response"
+- Response Handler → User Interface: "Final Answer"</p>
+<h3 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h3>
+<p>Fine-tuned Model Pattern, Agentic RAG Pattern, Multi-Modal RAG Pattern</p>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://arxiv.org/abs/2005.11401">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a> - 2020 - arXiv - Original paper introducing RAG methodology and its effectiveness in knowledge-intensive tasks</li>
+<li><a href="https://arxiv.org/abs/2401.08406">RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture</a> - 2024 - arXiv - Comprehensive comparison of RAG versus fine-tuning approaches for domain-specific applications</li>
+<li><a href="https://arxiv.org/abs/2401.05856">Seven Failure Points When Engineering a Retrieval Augmented Generation System</a> - 2024 - arXiv - Practical guide identifying common pitfalls and solutions in RAG implementation</li>
+</ol>
+<h2 id="2-agentic-orchestration-pattern">2. Agentic Orchestration Pattern<a class="headerlink" href="#2-agentic-orchestration-pattern" title="Permanent link">&para;</a></h2>
+<p>A sophisticated pattern where multiple AI agents work together in a coordinated manner, each with specialized capabilities and tools. Agents can communicate, delegate tasks, and combine their outputs to solve complex multi-step problems that require different types of reasoning or access to various systems.</p>
+<h3 id="when-to-use_1">When to Use<a class="headerlink" href="#when-to-use_1" title="Permanent link">&para;</a></h3>
+<p>Use this pattern for complex workflows that require multiple specialized skills, when tasks need to be broken down into subtasks handled by different agents, or when you need agents that can use tools, make decisions, and adapt their approach based on intermediate results. Ideal for business process automation, complex research tasks, and multi-domain problem solving.</p>
+<h3 id="architecture-drawing_1">Architecture Drawing<a class="headerlink" href="#architecture-drawing_1" title="Permanent link">&para;</a></h3>
+<p>The architecture depicts a central orchestrator managing multiple specialized agents, each with access to specific tools and services, with a shared memory system for context and coordination.</p>
+<p><strong>Components:</strong>
+- User Interface (100, 50)
+- Orchestrator Agent (300, 100)
+- Planning Agent (150, 200)
+- Research Agent (300, 200)
+- Analysis Agent (450, 200)
+- Action Agent (600, 200)
+- Shared Memory Store (300, 300)
+- Tool Registry (500, 100)
+- External APIs (650, 100)</p>
+<p><strong>Edges:</strong>
+- User Interface → Orchestrator Agent: "Task Request"
+- Orchestrator Agent → Planning Agent: "Decompose Task"
+- Orchestrator Agent → Research Agent: "Gather Information"
+- Orchestrator Agent → Analysis Agent: "Process Data"
+- Orchestrator Agent → Action Agent: "Execute Actions"
+- All Agents → Shared Memory Store: "State Updates"
+- Shared Memory Store → All Agents: "Context Retrieval"
+- Action Agent → External APIs: "Tool Execution"
+- Tool Registry → Action Agent: "Available Tools"</p>
+<h3 id="related-patterns_1">Related Patterns<a class="headerlink" href="#related-patterns_1" title="Permanent link">&para;</a></h3>
+<p>MCP Integration Pattern, Multi-Agent Collaboration Pattern, Tool-Augmented LLM Pattern</p>
+<h3 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT: An Autonomous GPT-4 Experiment</a> - 2023 - GitHub - Open-source implementation demonstrating autonomous agent capabilities and task decomposition</li>
+<li><a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a> - 2022 - arXiv - Framework for combining reasoning and acting in language models through structured prompting</li>
+<li><a href="https://arxiv.org/abs/2308.10848">Multi-Agent Programming with ChatGPT</a> - 2023 - arXiv - Exploration of multi-agent systems using large language models for collaborative problem solving</li>
+</ol>
+<h2 id="3-mcp-model-context-protocol-integration-pattern">3. MCP (Model Context Protocol) Integration Pattern<a class="headerlink" href="#3-mcp-model-context-protocol-integration-pattern" title="Permanent link">&para;</a></h2>
+<p>A standardization pattern that enables Large Language Models to securely connect with external data sources and tools through a unified protocol. MCP provides a consistent interface for LLMs to interact with various systems while maintaining security boundaries and proper access controls.</p>
+<h3 id="when-to-use_2">When to Use<a class="headerlink" href="#when-to-use_2" title="Permanent link">&para;</a></h3>
+<p>Use this pattern when you need to connect LLMs to multiple external systems with standardized interfaces, when security and access control are critical, or when you want to create reusable integrations that work across different LLM providers. Essential for enterprise environments requiring controlled access to sensitive systems and data sources.</p>
+<h3 id="architecture-drawing_2">Architecture Drawing<a class="headerlink" href="#architecture-drawing_2" title="Permanent link">&para;</a></h3>
+<p>The architecture shows LLMs connecting to various external systems through MCP servers, with a central MCP registry managing available resources and security policies.</p>
+<p><strong>Components:</strong>
+- LLM Client (200, 50)
+- MCP Registry (400, 50)
+- Database MCP Server (150, 200)
+- API MCP Server (300, 200)
+- File System MCP Server (450, 200)
+- Security Gateway (400, 150)
+- Resource Manager (550, 150)
+- External Database (150, 300)
+- External API (300, 300)
+- File Storage (450, 300)</p>
+<p><strong>Edges:</strong>
+- LLM Client → MCP Registry: "Resource Discovery"
+- MCP Registry → Security Gateway: "Access Validation"
+- Security Gateway → Database MCP Server: "Authenticated Request"
+- Security Gateway → API MCP Server: "Authenticated Request"
+- Security Gateway → File System MCP Server: "Authenticated Request"
+- Database MCP Server → External Database: "Query Execution"
+- API MCP Server → External API: "API Call"
+- File System MCP Server → File Storage: "File Operations"
+- Resource Manager → MCP Registry: "Resource Metadata"</p>
+<h3 id="related-patterns_2">Related Patterns<a class="headerlink" href="#related-patterns_2" title="Permanent link">&para;</a></h3>
+<p>Agentic Orchestration Pattern, Enterprise Security Gateway Pattern, Tool-Augmented LLM Pattern</p>
+<h3 id="references_2">References<a class="headerlink" href="#references_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://modelcontextprotocol.io/docs">Model Context Protocol Specification</a> - 2024 - Anthropic - Official specification defining the MCP standard for connecting LLMs to external resources</li>
+<li><a href="https://docs.anthropic.com/claude/docs/mcp">Building Secure AI Integrations with MCP</a> - 2024 - Anthropic Documentation - Practical guide for implementing secure LLM integrations using MCP</li>
+<li><a href="https://github.com/modelcontextprotocol/servers">MCP Server Examples and Best Practices</a> - 2024 - GitHub - Collection of reference implementations and patterns for MCP server development</li>
+</ol>
+<h2 id="4-fine-tuned-model-pattern">4. Fine-Tuned Model Pattern<a class="headerlink" href="#4-fine-tuned-model-pattern" title="Permanent link">&para;</a></h2>
+<p>A specialization pattern where a pre-trained Large Language Model is further trained on domain-specific data to improve performance for particular tasks or domains. This pattern creates specialized models that understand domain-specific terminology, follow specific formats, or exhibit particular behaviors.</p>
+<h3 id="when-to-use_3">When to Use<a class="headerlink" href="#when-to-use_3" title="Permanent link">&para;</a></h3>
+<p>Use this pattern when you need models to understand specialized domain knowledge, follow specific output formats consistently, or when RAG doesn't provide sufficient performance improvements. Ideal for highly specialized domains like legal, medical, or technical fields where domain expertise is critical and consistent behavior is required.</p>
+<h3 id="architecture-drawing_3">Architecture Drawing<a class="headerlink" href="#architecture-drawing_3" title="Permanent link">&para;</a></h3>
+<p>The architecture illustrates the fine-tuning pipeline from data preparation through model training to deployment, with ongoing monitoring and evaluation components.</p>
+<p><strong>Components:</strong>
+- Training Data Repository (100, 50)
+- Data Preprocessing Service (250, 50)
+- Base Model Registry (400, 50)
+- Fine-Tuning Engine (250, 150)
+- Model Validation Service (400, 150)
+- Model Registry (550, 150)
+- Inference Service (400, 250)
+- Performance Monitor (550, 250)
+- User Applications (250, 300)</p>
+<p><strong>Edges:</strong>
+- Training Data Repository → Data Preprocessing Service: "Raw Training Data"
+- Data Preprocessing Service → Fine-Tuning Engine: "Processed Dataset"
+- Base Model Registry → Fine-Tuning Engine: "Pre-trained Model"
+- Fine-Tuning Engine → Model Validation Service: "Candidate Model"
+- Model Validation Service → Model Registry: "Validated Model"
+- Model Registry → Inference Service: "Deployed Model"
+- Inference Service → User Applications: "Model Predictions"
+- Performance Monitor → Model Registry: "Performance Metrics"
+- User Applications → Performance Monitor: "Usage Analytics"</p>
+<h3 id="related-patterns_3">Related Patterns<a class="headerlink" href="#related-patterns_3" title="Permanent link">&para;</a></h3>
+<p>RAG Pattern, Model Versioning Pattern, A/B Testing Pattern</p>
+<h3 id="references_3">References<a class="headerlink" href="#references_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://arxiv.org/abs/2106.09685">Parameter-Efficient Fine-Tuning of Large Language Models</a> - 2021 - arXiv - Comprehensive survey of efficient fine-tuning methods including LoRA and prefix tuning</li>
+<li><a href="https://arxiv.org/abs/1909.08593">Fine-Tuning Language Models from Human Preferences</a> - 2019 - arXiv - Methodology for fine-tuning models using human feedback and preference learning</li>
+<li><a href="https://aclanthology.org/2020.findings-emnlp.212/">Domain-Adaptive Fine-Tuning for Neural Machine Translation</a> - 2020 - ACL - Best practices for adapting pre-trained models to specific domains and tasks</li>
+</ol>
+<h2 id="5-federated-learning-pattern">5. Federated Learning Pattern<a class="headerlink" href="#5-federated-learning-pattern" title="Permanent link">&para;</a></h2>
+<p>A distributed learning pattern that enables multiple organizations or departments to collaboratively train AI models without sharing raw data. This pattern maintains data privacy and security while leveraging collective knowledge across organizational boundaries.</p>
+<h3 id="when-to-use_4">When to Use<a class="headerlink" href="#when-to-use_4" title="Permanent link">&para;</a></h3>
+<p>Use this pattern when multiple parties want to benefit from shared AI models but cannot share sensitive data due to privacy, regulatory, or competitive concerns. Essential for healthcare consortiums, financial institutions, and cross-organizational collaborations where data governance is critical.</p>
+<h3 id="architecture-drawing_4">Architecture Drawing<a class="headerlink" href="#architecture-drawing_4" title="Permanent link">&para;</a></h3>
+<p>The architecture shows multiple participating organizations with local training capabilities connected through a central aggregation server that coordinates model updates without accessing raw data.</p>
+<p><strong>Components:</strong>
+- Central Aggregation Server (400, 100)
+- Organization A Trainer (150, 200)
+- Organization B Trainer (400, 200)
+- Organization C Trainer (650, 200)
+- Local Data A (150, 300)
+- Local Data B (400, 300)
+- Local Data C (650, 300)
+- Global Model Registry (400, 50)
+- Security Controller (550, 100)</p>
+<p><strong>Edges:</strong>
+- Global Model Registry → Central Aggregation Server: "Base Model"
+- Central Aggregation Server → Organization A Trainer: "Global Model Updates"
+- Central Aggregation Server → Organization B Trainer: "Global Model Updates"
+- Central Aggregation Server → Organization C Trainer: "Global Model Updates"
+- Organization A Trainer → Central Aggregation Server: "Local Model Updates"
+- Organization B Trainer → Central Aggregation Server: "Local Model Updates"
+- Organization C Trainer → Central Aggregation Server: "Local Model Updates"
+- Local Data A → Organization A Trainer: "Training Data"
+- Local Data B → Organization B Trainer: "Training Data"
+- Local Data C → Organization C Trainer: "Training Data"
+- Security Controller → Central Aggregation Server: "Privacy Validation"</p>
+<h3 id="related-patterns_4">Related Patterns<a class="headerlink" href="#related-patterns_4" title="Permanent link">&para;</a></h3>
+<p>Privacy-Preserving AI Pattern, Multi-Tenant Architecture Pattern, Distributed Training Pattern</p>
+<h3 id="references_4">References<a class="headerlink" href="#references_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://arxiv.org/abs/1602.05629">Communication-Efficient Learning of Deep Networks from Decentralized Data</a> - 2016 - arXiv - Foundational paper introducing federated learning and its communication-efficient algorithms</li>
+<li><a href="https://arxiv.org/abs/1908.07873">Federated Learning: Challenges, Methods, and Future Directions</a> - 2019 - arXiv - Comprehensive survey of federated learning challenges and solutions in practice</li>
+<li><a href="https://www.nature.com/articles/s41746-021-00489-2">Privacy-Preserving Federated Learning in Healthcare</a> - 2021 - Nature Digital Medicine - Real-world applications of federated learning in healthcare with privacy considerations</li>
+</ol>
+<h2 id="6-multi-modal-ai-pattern">6. Multi-Modal AI Pattern<a class="headerlink" href="#6-multi-modal-ai-pattern" title="Permanent link">&para;</a></h2>
+<p>An integration pattern that combines multiple types of AI models to process different data modalities (text, images, audio, video) within a single application. This pattern enables more comprehensive understanding and generation across various media types.</p>
+<h3 id="when-to-use_5">When to Use<a class="headerlink" href="#when-to-use_5" title="Permanent link">&para;</a></h3>
+<p>Use this pattern when applications need to understand or generate content across multiple media types, when context spans different modalities, or when you need to provide rich, multimedia responses. Essential for content creation platforms, educational systems, and comprehensive document analysis applications.</p>
+<h3 id="architecture-drawing_5">Architecture Drawing<a class="headerlink" href="#architecture-drawing_5" title="Permanent link">&para;</a></h3>
+<p>The architecture demonstrates multiple specialized models for different modalities coordinated through a central fusion engine that combines insights and generates multi-modal responses.</p>
+<p><strong>Components:</strong>
+- User Interface (300, 50)
+- Modality Router (300, 100)
+- Text Processing Engine (150, 200)
+- Image Processing Engine (300, 200)
+- Audio Processing Engine (450, 200)
+- Multi-Modal Fusion Engine (300, 300)
+- Response Generator (300, 400)
+- Vector Store (500, 250)
+- Context Manager (100, 300)</p>
+<p><strong>Edges:</strong>
+- User Interface → Modality Router: "Multi-Modal Input"
+- Modality Router → Text Processing Engine: "Text Data"
+- Modality Router → Image Processing Engine: "Image Data"
+- Modality Router → Audio Processing Engine: "Audio Data"
+- Text Processing Engine → Multi-Modal Fusion Engine: "Text Features"
+- Image Processing Engine → Multi-Modal Fusion Engine: "Image Features"
+- Audio Processing Engine → Multi-Modal Fusion Engine: "Audio Features"
+- Multi-Modal Fusion Engine → Response Generator: "Fused Understanding"
+- Response Generator → User Interface: "Multi-Modal Response"
+- Vector Store → Multi-Modal Fusion Engine: "Cross-Modal Context"
+- Context Manager → Multi-Modal Fusion Engine: "Session Context"</p>
+<h3 id="related-patterns_5">Related Patterns<a class="headerlink" href="#related-patterns_5" title="Permanent link">&para;</a></h3>
+<p>RAG Pattern, Content Generation Pipeline Pattern, Unified Embedding Pattern</p>
+<h3 id="references_5">References<a class="headerlink" href="#references_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://arxiv.org/abs/2204.14198">Flamingo: a Visual Language Model for Few-Shot Learning</a> - 2022 - arXiv - Breakthrough model demonstrating effective multi-modal learning with few-shot capabilities</li>
+<li><a href="https://arxiv.org/abs/2103.00020">CLIP: Learning Transferable Visual Representations from Natural Language Supervision</a> - 2021 - arXiv - Foundational work on joint vision-language understanding and cross-modal retrieval</li>
+<li><a href="https://arxiv.org/abs/2209.14792">Make-A-Video: Text-to-Video Generation without Text-Video Data</a> - 2022 - arXiv - Advanced multi-modal generation combining text understanding with video creation capabilities</li>
+</ol>
+<h2 id="7-enterprise-security-gateway-pattern">7. Enterprise Security Gateway Pattern<a class="headerlink" href="#7-enterprise-security-gateway-pattern" title="Permanent link">&para;</a></h2>
+<p>A security-focused pattern that provides centralized authentication, authorization, and monitoring for all AI service interactions within an enterprise. This pattern ensures compliance, audit trails, and proper access controls across all generative AI applications.</p>
+<h3 id="when-to-use_6">When to Use<a class="headerlink" href="#when-to-use_6" title="Permanent link">&para;</a></h3>
+<p>Use this pattern in enterprise environments with strict security requirements, regulatory compliance needs, or when multiple AI services need consistent security policies. Essential for financial services, healthcare, government, and other highly regulated industries.</p>
+<h3 id="architecture-drawing_6">Architecture Drawing<a class="headerlink" href="#architecture-drawing_6" title="Permanent link">&para;</a></h3>
+<p>The architecture shows all AI service requests flowing through a centralized security gateway that handles authentication, authorization, logging, and compliance before routing to appropriate AI services.</p>
+<p><strong>Components:</strong>
+- User Applications (200, 50)
+- API Gateway (200, 150)
+- Security Gateway (400, 150)
+- Authentication Service (300, 200)
+- Authorization Service (500, 200)
+- Audit Logger (400, 250)
+- Compliance Monitor (550, 250)
+- LLM Services (200, 300)
+- Vector Stores (400, 300)
+- Agent Services (600, 300)</p>
+<p><strong>Edges:</strong>
+- User Applications → API Gateway: "AI Service Request"
+- API Gateway → Security Gateway: "Authenticated Request"
+- Security Gateway → Authentication Service: "Identity Verification"
+- Security Gateway → Authorization Service: "Permission Check"
+- Security Gateway → LLM Services: "Authorized Request"
+- Security Gateway → Vector Stores: "Authorized Query"
+- Security Gateway → Agent Services: "Authorized Task"
+- Security Gateway → Audit Logger: "Request Log"
+- Audit Logger → Compliance Monitor: "Audit Trail"
+- Compliance Monitor → Security Gateway: "Policy Updates"</p>
+<h3 id="related-patterns_6">Related Patterns<a class="headerlink" href="#related-patterns_6" title="Permanent link">&para;</a></h3>
+<p>MCP Integration Pattern, Zero Trust Architecture Pattern, API Management Pattern</p>
+<h3 id="references_6">References<a class="headerlink" href="#references_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> - 2023 - NIST - Comprehensive framework for managing AI risks in enterprise environments</li>
+<li><a href="https://cloud.google.com/security/ai-ml">Enterprise AI Security Best Practices</a> - 2024 - Google Cloud - Practical guide for securing AI/ML workloads in enterprise cloud environments</li>
+<li><a href="https://www.cisa.gov/sites/default/files/publications/CISA_Zero_Trust_Maturity_Model_v2.0.pdf">Zero Trust Architecture for AI Systems</a> - 2023 - CISA - Government guidance on implementing zero trust principles for AI system security</li>
+</ol>
+<h2 id="8-model-versioning-and-ab-testing-pattern">8. Model Versioning and A/B Testing Pattern<a class="headerlink" href="#8-model-versioning-and-ab-testing-pattern" title="Permanent link">&para;</a></h2>
+<p>A deployment pattern that manages multiple versions of AI models simultaneously, enabling controlled rollouts, performance comparisons, and gradual migrations. This pattern supports experimentation and risk mitigation in production AI systems.</p>
+<h3 id="when-to-use_7">When to Use<a class="headerlink" href="#when-to-use_7" title="Permanent link">&para;</a></h3>
+<p>Use this pattern when you need to test new model versions safely, compare performance between different approaches, or gradually roll out model updates. Essential for production systems where model changes need validation and when business impact needs to be measured systematically.</p>
+<h3 id="architecture-drawing_7">Architecture Drawing<a class="headerlink" href="#architecture-drawing_7" title="Permanent link">&para;</a></h3>
+<p>The architecture illustrates a traffic routing system that directs requests to different model versions based on configured rules, with comprehensive monitoring and comparison capabilities.</p>
+<p><strong>Components:</strong>
+- User Requests (250, 50)
+- Traffic Router (250, 120)
+- Experiment Controller (400, 120)
+- Model A (150, 200)
+- Model B (250, 200)
+- Model C (350, 200)
+- Performance Monitor (400, 200)
+- Metrics Collector (550, 200)
+- Results Analyzer (400, 280)
+- Model Registry (100, 280)</p>
+<p><strong>Edges:</strong>
+- User Requests → Traffic Router: "Incoming Requests"
+- Traffic Router → Model A: "Traffic Split A"
+- Traffic Router → Model B: "Traffic Split B"
+- Traffic Router → Model C: "Traffic Split C"
+- Experiment Controller → Traffic Router: "Routing Rules"
+- Model A → Performance Monitor: "Response A"
+- Model B → Performance Monitor: "Response B"
+- Model C → Performance Monitor: "Response C"
+- Performance Monitor → Metrics Collector: "Performance Data"
+- Metrics Collector → Results Analyzer: "Aggregated Metrics"
+- Model Registry → Traffic Router: "Available Models"</p>
+<h3 id="related-patterns_7">Related Patterns<a class="headerlink" href="#related-patterns_7" title="Permanent link">&para;</a></h3>
+<p>Fine-Tuned Model Pattern, Blue-Green Deployment Pattern, Performance Monitoring Pattern</p>
+<h3 id="references_7">References<a class="headerlink" href="#references_7" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://arxiv.org/abs/2006.10254">Continuous Integration and Deployment for Machine Learning</a> - 2020 - arXiv - Comprehensive guide to CI/CD practices specifically for machine learning systems</li>
+<li><a href="https://www.uber.com/blog/experimentation-platform/">A/B Testing for Machine Learning Models</a> - 2018 - Uber Engineering - Real-world implementation of A/B testing infrastructure for ML models at scale</li>
+<li><a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">MLOps: Continuous Delivery and Automation Pipelines in Machine Learning</a> - 2021 - Google Cloud - Best practices for model versioning and automated deployment pipelines</li>
+</ol>
+<h2 id="9-prompt-engineering-and-template-management-pattern">9. Prompt Engineering and Template Management Pattern<a class="headerlink" href="#9-prompt-engineering-and-template-management-pattern" title="Permanent link">&para;</a></h2>
+<p>A governance pattern that centralizes prompt design, versioning, and optimization across an organization. This pattern ensures consistency, enables prompt reuse, and provides systematic approaches to prompt improvement and testing.</p>
+<h3 id="when-to-use_8">When to Use<a class="headerlink" href="#when-to-use_8" title="Permanent link">&para;</a></h3>
+<p>Use this pattern when multiple teams are using similar prompts, when you need consistent prompt quality across applications, or when prompt performance optimization is critical. Essential for large organizations with multiple AI applications and when prompt intellectual property needs protection.</p>
+<h3 id="architecture-drawing_8">Architecture Drawing<a class="headerlink" href="#architecture-drawing_8" title="Permanent link">&para;</a></h3>
+<p>The architecture shows a centralized prompt management system that stores, versions, and optimizes prompts, with testing capabilities and integration points for various applications.</p>
+<p><strong>Components:</strong>
+- Prompt Repository (300, 50)
+- Prompt Designer Interface (150, 120)
+- Version Control System (300, 120)
+- Template Engine (450, 120)
+- A/B Testing Framework (300, 200)
+- Performance Analyzer (450, 200)
+- Application Integration (150, 280)
+- LLM Services (300, 280)
+- Metrics Dashboard (450, 280)</p>
+<p><strong>Edges:</strong>
+- Prompt Designer Interface → Prompt Repository: "New Prompts"
+- Prompt Repository → Version Control System: "Prompt Versions"
+- Version Control System → Template Engine: "Template Retrieval"
+- Template Engine → A/B Testing Framework: "Test Variants"
+- A/B Testing Framework → LLM Services: "Test Prompts"
+- LLM Services → Performance Analyzer: "Response Quality"
+- Performance Analyzer → Metrics Dashboard: "Analysis Results"
+- Application Integration → Template Engine: "Prompt Requests"
+- Metrics Dashboard → Prompt Designer Interface: "Optimization Insights"</p>
+<h3 id="related-patterns_8">Related Patterns<a class="headerlink" href="#related-patterns_8" title="Permanent link">&para;</a></h3>
+<p>Model Versioning Pattern, Content Generation Pipeline Pattern, Quality Assurance Pattern</p>
+<h3 id="references_8">References<a class="headerlink" href="#references_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://arxiv.org/abs/2201.11903">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a> - 2022 - arXiv - Foundational research on structured prompting techniques for improved reasoning</li>
+<li><a href="https://arxiv.org/abs/2212.08073">Constitutional AI: Harmlessness from AI Feedback</a> - 2022 - Anthropic - Advanced prompting techniques for building more helpful, harmless, and honest AI systems</li>
+<li><a href="https://www.promptingguide.ai/">Prompt Engineering Guide</a> - 2023 - Community Resource - Comprehensive collection of prompt engineering techniques and best practices</li>
+</ol>
+<h2 id="10-real-time-streaming-ai-pattern">10. Real-Time Streaming AI Pattern<a class="headerlink" href="#10-real-time-streaming-ai-pattern" title="Permanent link">&para;</a></h2>
+<p>A data processing pattern that applies AI models to continuous data streams in real-time, enabling immediate responses and continuous learning from streaming data sources. This pattern supports low-latency AI applications that need to process data as it arrives.</p>
+<h3 id="when-to-use_9">When to Use<a class="headerlink" href="#when-to-use_9" title="Permanent link">&para;</a></h3>
+<p>Use this pattern for applications requiring immediate AI responses to streaming data, real-time decision making, or continuous model adaptation. Essential for fraud detection, real-time personalization, IoT analytics, and live content moderation systems.</p>
+<h3 id="architecture-drawing_9">Architecture Drawing<a class="headerlink" href="#architecture-drawing_9" title="Permanent link">&para;</a></h3>
+<p>The architecture depicts streaming data flowing through real-time processing engines with AI models that can make immediate decisions and optionally trigger actions or updates.</p>
+<p><strong>Components:</strong>
+- Data Sources (100, 50)
+- Stream Ingestion (200, 50)
+- Event Router (300, 50)
+- Stream Processor A (200, 150)
+- Stream Processor B (400, 150)
+- AI Model Service (300, 200)
+- Decision Engine (450, 200)
+- Action Triggers (550, 200)
+- State Store (200, 250)
+- Monitoring Dashboard (450, 250)</p>
+<p><strong>Edges:</strong>
+- Data Sources → Stream Ingestion: "Raw Data Stream"
+- Stream Ingestion → Event Router: "Processed Events"
+- Event Router → Stream Processor A: "Event Stream A"
+- Event Router → Stream Processor B: "Event Stream B"
+- Stream Processor A → AI Model Service: "Feature Extraction"
+- Stream Processor B → AI Model Service: "Feature Extraction"
+- AI Model Service → Decision Engine: "AI Predictions"
+- Decision Engine → Action Triggers: "Automated Actions"
+- Stream Processor A → State Store: "State Updates"
+- AI Model Service → Monitoring Dashboard: "Performance Metrics"</p>
+<h3 id="related-patterns_9">Related Patterns<a class="headerlink" href="#related-patterns_9" title="Permanent link">&para;</a></h3>
+<p>Event-Driven Architecture Pattern, Lambda Architecture Pattern, Edge Computing Pattern</p>
+<h3 id="references_9">References<a class="headerlink" href="#references_9" title="Permanent link">&para;</a></h3>
+<ol>
+<li><a href="https://www.confluent.io/blog/build-deploy-scalable-machine-learning-production-apache-kafka/">Stream Processing with Apache Kafka and Machine Learning</a> - 2020 - Confluent - Practical guide for implementing real-time ML with streaming platforms</li>
+<li><a href="https://eng.uber.com/michelangelo-machine-learning-platform/">Real-Time Machine Learning Inference at Scale</a> - 2017 - Uber Engineering - Case study of large-scale real-time ML inference architecture</li>
+<li><a href="https://www.oreilly.com/library/view/streaming-systems/9781491983867/">Streaming Systems: The What, Where, When, and How of Large-Scale Data Processing</a> - 2018 - O'Reilly - Comprehensive guide to streaming data processing architectures and patterns</li>
+</ol>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Dan McCreary
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
