@@ -3,6 +3,8 @@ site_name: Generative AI Architecture Patterns
 nav:
    - Home: index.md
    - About This Book: about.md
+   - Events: events.md
+
    - Concepts:
      - Introduction: concepts/index.md
      - Terminology and Standards: concepts/architecture-standards.md
@@ -14,6 +16,7 @@ nav:
      - Knowledge Graph: concepts/knowledge-graph.md
      - Cosine Similarity: concepts/cosine-similarity.md
      - Vector Database: concepts/vector-database.md
+   
    - Patterns:
      - Introduction: patterns/index.md
      - Prompt Enrichment: patterns/prompt-enrichment.md
@@ -23,12 +26,21 @@ nav:
      - Knowledge Representation: patterns/knowledge-representation.md
      - RAG: patterns/rag.md
      - Similarity: patterns/similarity.md
-   - Simulations:
+   
+   - Micro Simulations:
+      - Introductions: sims/index.md
+
+   
+   - Prompts:
+     - Introduction: prompts/index.md
+     - GenAI Arch Trends: prompts/genai-arch-trends.md
+     - Update the README.md: prompts/update-readme.md
+     - Word Cloud: prompts/word-cloud/index.md
      - Knowledge Graph:
        - Introduction: prompts/knowledge-graph/index.md
        - prompts/knowledge-graph/concept-enumeration.md
        - prompts/knowledge-graph/concept-dependency.md
-       - prompts/knowledge-graph/concept-taxonomy.md
+       - prompts/knowledge-graph/concept-taxonomy.md 
    - Talks: talks.md
    - Contributing: contributing.md
    - Glossary: glossary.md
