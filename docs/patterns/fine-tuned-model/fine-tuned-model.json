@@ -1,0 +1,25 @@
+{
+  "title": "Fine-Tuned Model Pattern",
+  "nodes": [
+    { "id": 1, "label": "Training Data Repository", "x": 100, "y": 50 },
+    { "id": 2, "label": "Data Preprocessing Service", "x": 250, "y": 50 },
+    { "id": 3, "label": "Base Model Registry", "x": 400, "y": 50 },
+    { "id": 4, "label": "Fine-Tuning Engine", "x": 250, "y": 150 },
+    { "id": 5, "label": "Model Validation Service", "x": 400, "y": 150 },
+    { "id": 6, "label": "Model Registry", "x": 550, "y": 150 },
+    { "id": 7, "label": "Inference Service", "x": 400, "y": 250 },
+    { "id": 8, "label": "Performance Monitor", "x": 550, "y": 250 },
+    { "id": 9, "label": "User Applications", "x": 250, "y": 300 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "Raw Training Data" },
+    { "from": 2, "to": 4, "label": "Processed Dataset" },
+    { "from": 3, "to": 4, "label": "Pre-trained Model" },
+    { "from": 4, "to": 5, "label": "Candidate Model" },
+    { "from": 5, "to": 6, "label": "Validated Model" },
+    { "from": 6, "to": 7, "label": "Deployed Model" },
+    { "from": 7, "to": 9, "label": "Model Predictions" },
+    { "from": 8, "to": 6, "label": "Performance Metrics" },
+    { "from": 9, "to": 8, "label": "Usage Analytics" }
+  ]
+}

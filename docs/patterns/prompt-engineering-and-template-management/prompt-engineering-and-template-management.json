@@ -1,0 +1,25 @@
+{
+  "title": "Prompt Engineering and Template Management Pattern",
+  "nodes": [
+    { "id": 1, "label": "Prompt Repository", "x": 300, "y": 50 },
+    { "id": 2, "label": "Prompt Designer Interface", "x": 150, "y": 120 },
+    { "id": 3, "label": "Version Control System", "x": 300, "y": 120 },
+    { "id": 4, "label": "Template Engine", "x": 450, "y": 120 },
+    { "id": 5, "label": "A/B Testing Framework", "x": 300, "y": 200 },
+    { "id": 6, "label": "Performance Analyzer", "x": 450, "y": 200 },
+    { "id": 7, "label": "Application Integration", "x": 150, "y": 280 },
+    { "id": 8, "label": "LLM Services", "x": 300, "y": 280 },
+    { "id": 9, "label": "Metrics Dashboard", "x": 450, "y": 280 }
+  ],
+  "edges": [
+    { "from": 2, "to": 1, "label": "New Prompts" },
+    { "from": 1, "to": 3, "label": "Prompt Versions" },
+    { "from": 3, "to": 4, "label": "Template Retrieval" },
+    { "from": 4, "to": 5, "label": "Test Variants" },
+    { "from": 5, "to": 8, "label": "Test Prompts" },
+    { "from": 8, "to": 6, "label": "Response Quality" },
+    { "from": 6, "to": 9, "label": "Analysis Results" },
+    { "from": 7, "to": 4, "label": "Prompt Requests" },
+    { "from": 9, "to": 2, "label": "Optimization Insights" }
+  ]
+}

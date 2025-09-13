@@ -1,0 +1,27 @@
+{
+  "title": "Multi-Modal AI Pattern",
+  "nodes": [
+    { "id": 1, "label": "User Interface", "x": 300, "y": 50 },
+    { "id": 2, "label": "Modality Router", "x": 300, "y": 100 },
+    { "id": 3, "label": "Text Processing Engine", "x": 150, "y": 200 },
+    { "id": 4, "label": "Image Processing Engine", "x": 300, "y": 200 },
+    { "id": 5, "label": "Audio Processing Engine", "x": 450, "y": 200 },
+    { "id": 6, "label": "Multi-Modal Fusion Engine", "x": 300, "y": 300 },
+    { "id": 7, "label": "Response Generator", "x": 300, "y": 400 },
+    { "id": 8, "label": "Vector Store", "x": 500, "y": 250 },
+    { "id": 9, "label": "Context Manager", "x": 100, "y": 300 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "Multi-Modal Input" },
+    { "from": 2, "to": 3, "label": "Text Data" },
+    { "from": 2, "to": 4, "label": "Image Data" },
+    { "from": 2, "to": 5, "label": "Audio Data" },
+    { "from": 3, "to": 6, "label": "Text Features" },
+    { "from": 4, "to": 6, "label": "Image Features" },
+    { "from": 5, "to": 6, "label": "Audio Features" },
+    { "from": 6, "to": 7, "label": "Fused Understanding" },
+    { "from": 7, "to": 1, "label": "Multi-Modal Response" },
+    { "from": 8, "to": 6, "label": "Cross-Modal Context" },
+    { "from": 9, "to": 6, "label": "Session Context" }
+  ]
+}
