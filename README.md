@@ -140,4 +140,7 @@ This project is built with and grateful for the following open source technologi
 - **[Python](https://www.python.org/)** - The programming language powering the build system
 - **[Conda](https://conda.io/)** - Package management and virtual environment system
 
+### Interactive Microsimulations
+- **[p5.js](https://p5js.org/)** - A JavaScript library for creative coding that makes interactive visualizations and microsimulations accessible to everyone. Special thanks to the wonderful p5.js team and community for creating such an amazing platform for educational simulations and visualizations.
+
 Special thanks to all the contributors and maintainers of these excellent open source projects that make this documentation possible.
