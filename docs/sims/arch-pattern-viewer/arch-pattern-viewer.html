@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Pattern Viewer</title>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .file-input {
+            margin: 10px;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        .load-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .load-button:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: #dc3545;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 4px;
+        }
+
+        #network-container {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .info {
+            text-align: center;
+            color: #666;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .pattern-info {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .pattern-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .node-count, .edge-count {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">Generative AI Architecture Pattern Viewer</h1>
+        <p>Interactive visualization of architectural patterns using vis-network.js</p>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="json-path" class="file-input"
+               placeholder="Enter JSON file path (e.g., ../../patterns/rag/rag.json)"
+               style="width: 400px;">
+        <button class="load-button" onclick="loadPattern()">Load Pattern</button>
+    </div>
+
+    <div id="pattern-info" class="pattern-info" style="display: none;">
+        <div id="pattern-title" class="pattern-title"></div>
+        <div id="pattern-stats">
+            <span id="node-count" class="node-count"></span> |
+            <span id="edge-count" class="edge-count"></span>
+        </div>
+    </div>
+
+    <div id="error-message" class="error" style="display: none;"></div>
+
+    <div id="network-container"></div>
+
+    <div class="info">
+        <p>Use mouse wheel to zoom, drag to pan, click and drag nodes to rearrange.</p>
+        <p>Example patterns: rag, agentic-orchestration, mcp-integration, fine-tuned-model, etc.</p>
+    </div>
+
+    <script>
+        let network = null;
+
+        // Parse URL parameters
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Initialize on page load
+        window.addEventListener('load', function() {
+            const jsonPath = getUrlParameter('json');
+            if (jsonPath) {
+                document.getElementById('json-path').value = jsonPath;
+                loadPattern();
+            }
+        });
+
+        // Load and display pattern
+        async function loadPattern() {
+            const jsonPath = document.getElementById('json-path').value.trim();
+            const errorElement = document.getElementById('error-message');
+            const patternInfoElement = document.getElementById('pattern-info');
+
+            // Hide previous error/info
+            errorElement.style.display = 'none';
+            patternInfoElement.style.display = 'none';
+
+            if (!jsonPath) {
+                showError('Please enter a JSON file path');
+                return;
+            }
+
+            try {
+                const response = await fetch(jsonPath);
+                if (!response.ok) {
+                    throw new Error(`Failed to load file: ${response.status} ${response.statusText}`);
+                }
+
+                const data = await response.json();
+
+                // Validate data structure
+                if (!data.nodes || !data.edges || !Array.isArray(data.nodes) || !Array.isArray(data.edges)) {
+                    throw new Error('Invalid JSON structure: missing nodes or edges arrays');
+                }
+
+                // Display pattern info
+                showPatternInfo(data);
+
+                // Create vis-network visualization
+                createNetworkVisualization(data);
+
+            } catch (error) {
+                showError(`Error loading pattern: ${error.message}`);
+                console.error('Error:', error);
+            }
+        }
+
+        function showError(message) {
+            const errorElement = document.getElementById('error-message');
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        function showPatternInfo(data) {
+            const patternInfoElement = document.getElementById('pattern-info');
+            const titleElement = document.getElementById('pattern-title');
+            const nodeCountElement = document.getElementById('node-count');
+            const edgeCountElement = document.getElementById('edge-count');
+
+            titleElement.textContent = data.title || 'Architecture Pattern';
+            nodeCountElement.textContent = `${data.nodes.length} components`;
+            edgeCountElement.textContent = `${data.edges.length} connections`;
+
+            patternInfoElement.style.display = 'block';
+        }
+
+        function createNetworkVisualization(data) {
+            const container = document.getElementById('network-container');
+
+            // Prepare nodes data
+            const nodes = new vis.DataSet(data.nodes.map(node => ({
+                id: node.id,
+                label: node.label,
+                x: node.x,
+                y: node.y,
+                shape: 'box',
+                margin: 10,
+                font: {
+                    size: 12,
+                    color: '#333333'
+                },
+                color: {
+                    background: '#e3f2fd',
+                    border: '#1976d2',
+                    highlight: {
+                        background: '#bbdefb',
+                        border: '#0d47a1'
+                    }
+                },
+                borderWidth: 2,
+                borderWidthSelected: 3
+            })));
+
+            // Prepare edges data
+            const edges = new vis.DataSet(data.edges.map(edge => ({
+                from: edge.from,
+                to: edge.to,
+                label: edge.label,
+                arrows: 'to',
+                color: {
+                    color: '#666666',
+                    highlight: '#333333'
+                },
+                font: {
+                    size: 10,
+                    color: '#444444',
+                    strokeWidth: 3,
+                    strokeColor: '#ffffff'
+                },
+                width: 2,
+                smooth: {
+                    enabled: true,
+                    type: 'continuous',
+                    roundness: 0.2
+                }
+            })));
+
+            // Network data
+            const networkData = {
+                nodes: nodes,
+                edges: edges
+            };
+
+            // Configuration options
+            const options = {
+                layout: {
+                    improvedLayout: false,
+                    hierarchical: false
+                },
+                physics: {
+                    enabled: false
+                },
+                interaction: {
+                    dragNodes: true,
+                    dragView: true,
+                    zoomView: true,
+                    selectConnectedEdges: false
+                },
+                nodes: {
+                    chosen: true,
+                    scaling: {
+                        min: 10,
+                        max: 30
+                    }
+                },
+                edges: {
+                    chosen: true,
+                    scaling: {
+                        min: 1,
+                        max: 3
+                    }
+                },
+                configure: false
+            };
+
+            // Destroy existing network if it exists
+            if (network) {
+                network.destroy();
+            }
+
+            // Create new network
+            network = new vis.Network(container, networkData, options);
+
+            // Add event listeners
+            network.on('selectNode', function(event) {
+                const nodeId = event.nodes[0];
+                const nodeData = nodes.get(nodeId);
+                console.log('Selected node:', nodeData);
+            });
+
+            network.on('selectEdge', function(event) {
+                const edgeId = event.edges[0];
+                const edgeData = edges.get(edgeId);
+                console.log('Selected edge:', edgeData);
+            });
+
+            // Fit the network to show all nodes
+            network.fit({
+                animation: {
+                    duration: 1000,
+                    easingFunction: 'easeInOutQuad'
+                }
+            });
+        }
+
+        // Add keyboard shortcut for loading
+        document.getElementById('json-path').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                loadPattern();
+            }
+        });
+    </script>
+</body>
+</html>

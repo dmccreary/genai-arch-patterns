@@ -1,0 +1,31 @@
+{
+  "title": "Agentic Orchestration Pattern",
+  "nodes": [
+    { "id": 1, "label": "User Interface", "x": 100, "y": 50 },
+    { "id": 2, "label": "Orchestrator Agent", "x": 300, "y": 100 },
+    { "id": 3, "label": "Planning Agent", "x": 150, "y": 200 },
+    { "id": 4, "label": "Research Agent", "x": 300, "y": 200 },
+    { "id": 5, "label": "Analysis Agent", "x": 450, "y": 200 },
+    { "id": 6, "label": "Action Agent", "x": 600, "y": 200 },
+    { "id": 7, "label": "Shared Memory Store", "x": 300, "y": 300 },
+    { "id": 8, "label": "Tool Registry", "x": 500, "y": 100 },
+    { "id": 9, "label": "External APIs", "x": 650, "y": 100 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "Task Request" },
+    { "from": 2, "to": 3, "label": "Decompose Task" },
+    { "from": 2, "to": 4, "label": "Gather Information" },
+    { "from": 2, "to": 5, "label": "Process Data" },
+    { "from": 2, "to": 6, "label": "Execute Actions" },
+    { "from": 3, "to": 7, "label": "State Updates" },
+    { "from": 4, "to": 7, "label": "State Updates" },
+    { "from": 5, "to": 7, "label": "State Updates" },
+    { "from": 6, "to": 7, "label": "State Updates" },
+    { "from": 7, "to": 3, "label": "Context Retrieval" },
+    { "from": 7, "to": 4, "label": "Context Retrieval" },
+    { "from": 7, "to": 5, "label": "Context Retrieval" },
+    { "from": 7, "to": 6, "label": "Context Retrieval" },
+    { "from": 6, "to": 9, "label": "Tool Execution" },
+    { "from": 8, "to": 6, "label": "Available Tools" }
+  ]
+}

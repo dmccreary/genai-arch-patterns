@@ -1,0 +1,27 @@
+{
+  "title": "Enterprise Security Gateway Pattern",
+  "nodes": [
+    { "id": 1, "label": "User Applications", "x": 200, "y": 50 },
+    { "id": 2, "label": "API Gateway", "x": 200, "y": 150 },
+    { "id": 3, "label": "Security Gateway", "x": 400, "y": 150 },
+    { "id": 4, "label": "Authentication Service", "x": 300, "y": 200 },
+    { "id": 5, "label": "Authorization Service", "x": 500, "y": 200 },
+    { "id": 6, "label": "Audit Logger", "x": 400, "y": 250 },
+    { "id": 7, "label": "Compliance Monitor", "x": 550, "y": 250 },
+    { "id": 8, "label": "LLM Services", "x": 200, "y": 300 },
+    { "id": 9, "label": "Vector Stores", "x": 400, "y": 300 },
+    { "id": 10, "label": "Agent Services", "x": 600, "y": 300 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "AI Service Request" },
+    { "from": 2, "to": 3, "label": "Authenticated Request" },
+    { "from": 3, "to": 4, "label": "Identity Verification" },
+    { "from": 3, "to": 5, "label": "Permission Check" },
+    { "from": 3, "to": 8, "label": "Authorized Request" },
+    { "from": 3, "to": 9, "label": "Authorized Query" },
+    { "from": 3, "to": 10, "label": "Authorized Task" },
+    { "from": 3, "to": 6, "label": "Request Log" },
+    { "from": 6, "to": 7, "label": "Audit Trail" },
+    { "from": 7, "to": 3, "label": "Policy Updates" }
+  ]
+}

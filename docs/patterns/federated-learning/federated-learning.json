@@ -1,0 +1,27 @@
+{
+  "title": "Federated Learning Pattern",
+  "nodes": [
+    { "id": 1, "label": "Central Aggregation Server", "x": 400, "y": 100 },
+    { "id": 2, "label": "Organization A Trainer", "x": 150, "y": 200 },
+    { "id": 3, "label": "Organization B Trainer", "x": 400, "y": 200 },
+    { "id": 4, "label": "Organization C Trainer", "x": 650, "y": 200 },
+    { "id": 5, "label": "Local Data A", "x": 150, "y": 300 },
+    { "id": 6, "label": "Local Data B", "x": 400, "y": 300 },
+    { "id": 7, "label": "Local Data C", "x": 650, "y": 300 },
+    { "id": 8, "label": "Global Model Registry", "x": 400, "y": 50 },
+    { "id": 9, "label": "Security Controller", "x": 550, "y": 100 }
+  ],
+  "edges": [
+    { "from": 8, "to": 1, "label": "Base Model" },
+    { "from": 1, "to": 2, "label": "Global Model Updates" },
+    { "from": 1, "to": 3, "label": "Global Model Updates" },
+    { "from": 1, "to": 4, "label": "Global Model Updates" },
+    { "from": 2, "to": 1, "label": "Local Model Updates" },
+    { "from": 3, "to": 1, "label": "Local Model Updates" },
+    { "from": 4, "to": 1, "label": "Local Model Updates" },
+    { "from": 5, "to": 2, "label": "Training Data" },
+    { "from": 6, "to": 3, "label": "Training Data" },
+    { "from": 7, "to": 4, "label": "Training Data" },
+    { "from": 9, "to": 1, "label": "Privacy Validation" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Model Versioning and A/B Testing Pattern",
+  "nodes": [
+    { "id": 1, "label": "User Requests", "x": 250, "y": 50 },
+    { "id": 2, "label": "Traffic Router", "x": 250, "y": 120 },
+    { "id": 3, "label": "Experiment Controller", "x": 400, "y": 120 },
+    { "id": 4, "label": "Model A", "x": 150, "y": 200 },
+    { "id": 5, "label": "Model B", "x": 250, "y": 200 },
+    { "id": 6, "label": "Model C", "x": 350, "y": 200 },
+    { "id": 7, "label": "Performance Monitor", "x": 400, "y": 200 },
+    { "id": 8, "label": "Metrics Collector", "x": 550, "y": 200 },
+    { "id": 9, "label": "Results Analyzer", "x": 400, "y": 280 },
+    { "id": 10, "label": "Model Registry", "x": 100, "y": 280 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "Incoming Requests" },
+    { "from": 2, "to": 4, "label": "Traffic Split A" },
+    { "from": 2, "to": 5, "label": "Traffic Split B" },
+    { "from": 2, "to": 6, "label": "Traffic Split C" },
+    { "from": 3, "to": 2, "label": "Routing Rules" },
+    { "from": 4, "to": 7, "label": "Response A" },
+    { "from": 5, "to": 7, "label": "Response B" },
+    { "from": 6, "to": 7, "label": "Response C" },
+    { "from": 7, "to": 8, "label": "Performance Data" },
+    { "from": 8, "to": 9, "label": "Aggregated Metrics" },
+    { "from": 10, "to": 2, "label": "Available Models" }
+  ]
+}

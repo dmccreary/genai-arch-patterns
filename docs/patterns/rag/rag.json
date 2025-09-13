@@ -1,0 +1,22 @@
+{
+  "title": "RAG (Retrieval-Augmented Generation) Pattern",
+  "nodes": [
+    { "id": 1, "label": "User Interface", "x": 50, "y": 50 },
+    { "id": 2, "label": "Query Processing Service", "x": 200, "y": 50 },
+    { "id": 3, "label": "Embedding Service", "x": 350, "y": 50 },
+    { "id": 4, "label": "Vector Store", "x": 500, "y": 50 },
+    { "id": 5, "label": "Document Retrieval Service", "x": 650, "y": 50 },
+    { "id": 6, "label": "LLM Service", "x": 500, "y": 200 },
+    { "id": 7, "label": "Response Handler", "x": 200, "y": 200 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "User Query" },
+    { "from": 2, "to": 3, "label": "Processed Query" },
+    { "from": 3, "to": 4, "label": "Query Embedding" },
+    { "from": 4, "to": 5, "label": "Similar Documents" },
+    { "from": 5, "to": 6, "label": "Retrieved Context" },
+    { "from": 2, "to": 6, "label": "Original Query" },
+    { "from": 6, "to": 7, "label": "Generated Response" },
+    { "from": 7, "to": 1, "label": "Final Answer" }
+  ]
+}

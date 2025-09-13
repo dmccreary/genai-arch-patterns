@@ -1,0 +1,27 @@
+{
+  "title": "Real-Time Streaming AI Pattern",
+  "nodes": [
+    { "id": 1, "label": "Data Sources", "x": 100, "y": 50 },
+    { "id": 2, "label": "Stream Ingestion", "x": 200, "y": 50 },
+    { "id": 3, "label": "Event Router", "x": 300, "y": 50 },
+    { "id": 4, "label": "Stream Processor A", "x": 200, "y": 150 },
+    { "id": 5, "label": "Stream Processor B", "x": 400, "y": 150 },
+    { "id": 6, "label": "AI Model Service", "x": 300, "y": 200 },
+    { "id": 7, "label": "Decision Engine", "x": 450, "y": 200 },
+    { "id": 8, "label": "Action Triggers", "x": 550, "y": 200 },
+    { "id": 9, "label": "State Store", "x": 200, "y": 250 },
+    { "id": 10, "label": "Monitoring Dashboard", "x": 450, "y": 250 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "Raw Data Stream" },
+    { "from": 2, "to": 3, "label": "Processed Events" },
+    { "from": 3, "to": 4, "label": "Event Stream A" },
+    { "from": 3, "to": 5, "label": "Event Stream B" },
+    { "from": 4, "to": 6, "label": "Feature Extraction" },
+    { "from": 5, "to": 6, "label": "Feature Extraction" },
+    { "from": 6, "to": 7, "label": "AI Predictions" },
+    { "from": 7, "to": 8, "label": "Automated Actions" },
+    { "from": 4, "to": 9, "label": "State Updates" },
+    { "from": 6, "to": 10, "label": "Performance Metrics" }
+  ]
+}

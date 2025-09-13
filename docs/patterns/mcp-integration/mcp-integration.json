@@ -1,0 +1,26 @@
+{
+  "title": "MCP (Model Context Protocol) Integration Pattern",
+  "nodes": [
+    { "id": 1, "label": "LLM Client", "x": 200, "y": 50 },
+    { "id": 2, "label": "MCP Registry", "x": 400, "y": 50 },
+    { "id": 3, "label": "Database MCP Server", "x": 150, "y": 200 },
+    { "id": 4, "label": "API MCP Server", "x": 300, "y": 200 },
+    { "id": 5, "label": "File System MCP Server", "x": 450, "y": 200 },
+    { "id": 6, "label": "Security Gateway", "x": 400, "y": 150 },
+    { "id": 7, "label": "Resource Manager", "x": 550, "y": 150 },
+    { "id": 8, "label": "External Database", "x": 150, "y": 300 },
+    { "id": 9, "label": "External API", "x": 300, "y": 300 },
+    { "id": 10, "label": "File Storage", "x": 450, "y": 300 }
+  ],
+  "edges": [
+    { "from": 1, "to": 2, "label": "Resource Discovery" },
+    { "from": 2, "to": 6, "label": "Access Validation" },
+    { "from": 6, "to": 3, "label": "Authenticated Request" },
+    { "from": 6, "to": 4, "label": "Authenticated Request" },
+    { "from": 6, "to": 5, "label": "Authenticated Request" },
+    { "from": 3, "to": 8, "label": "Query Execution" },
+    { "from": 4, "to": 9, "label": "API Call" },
+    { "from": 5, "to": 10, "label": "File Operations" },
+    { "from": 7, "to": 2, "label": "Resource Metadata" }
+  ]
+}
