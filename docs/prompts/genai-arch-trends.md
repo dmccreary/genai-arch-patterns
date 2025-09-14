@@ -3,11 +3,14 @@
 The following prompt was given to OpenAI's Deep Research tool.
 
 !!! prompt
-    Please use the "Deep Research" feature to find out the key trends on how enterprise architects are using generative AI as a force multiplier to have larger impact within their organizations. Generate a list of the top 10 trends and then provide detailed references in the following format: 1. [Site Title](URL) - publication_date - publication_name - description of how this site is related to the use of generative AI in enterprise architecture
+    Please use the "Deep Research" feature to find out the key trends on how enterprise architects are using generative AI as a force multiplier to have larger impact within their organizations. Generate a list of the top 10 trends and then provide detailed references in the following format: 
+    
+    1. [Site Title](URL) - publication_date - publication_name - description of how this site is related to the use of generative AI in enterprise architecture
 
 ## Response
 
-## ChatGPT Said — GPT-5 Thinking
+ChatGPT Said — GPT-5 Thinking
+ChatGPT thought for 45 seconds.
 
 Here’s a concise, research-driven view of how enterprise architects (EAs) are using generative AI as a force multiplier.
 
@@ -23,8 +26,6 @@ Here’s a concise, research-driven view of how enterprise architects (EAs) are 
 8. **Value-linked roadmaps & portfolio rationalization.** EA uses GenAI to accelerate capability mapping, scenario design, and tech-debt reduction—tying AI initiatives to measurable business outcomes. ([Gartner][8])
 9. **Pragmatism on impact metrics.** After early hype, EAs emphasize integration with workflows and measurable P\&L impact; most value comes when AI is applied to specific, automatable back-office work. ([Tom's Hardware][9])
 10. **Skills & methods refresh within EA frameworks.** TOGAF-aligned guidance and skills updates reflect AI-era roles (governance, building-block selection, sustainability)—raising EA’s strategic profile. ([blog.opengroup.org][10])
-
----
 
 ### References (verified)
 
