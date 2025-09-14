@@ -1,4 +1,4 @@
-# #vents
+# Events
 
 ## Accelerating GenAI AEA Webinar
 

@@ -37,10 +37,13 @@ nav:
      - Knowledge Representation: patterns/knowledge-representation.md
      - Similarity: patterns/similarity.md
 
-   - Micro Simulations:
+   - MicroSims:
       - Introduction: sims/index.md
-      - Architecture Pattern Viewer: sims/arch-pattern-viewer/arch-pattern-viewer.html
-
+      - Architecture Pattern Viewer: 
+        - sims/arch-pattern-viewer/index.md
+        - sims/arch-pattern-viewer/arch-pattern-viewer.html    
+      - Drawing Tools: sims/ea-drawing-tools/index.md
+      - Mermaid: sims/ea-drawing-tools/mermaid-drawing-sites.md
    - Stories:
       - Introduction: stories/index.md
       - GenAI Force Multiplier: stories/genai-force-multiplier/index.md
@@ -54,8 +57,13 @@ nav:
        - Introduction: prompts/knowledge-graph/index.md
        - prompts/knowledge-graph/concept-enumeration.md
        - prompts/knowledge-graph/concept-dependency.md
-       - prompts/knowledge-graph/concept-taxonomy.md 
-   
+       - prompts/knowledge-graph/concept-taxonomy.md
+     - Architectural Patterns:
+       - Intro: prompts/architectural-patterns/index.md
+       - Create Folders: prompts/architectural-patterns/create-folders.md
+       - Create JSON: prompts/architectural-patterns/create-json.md
+
+  
    - Presentations and Talks: slides.md
    - Contributing: contributing.md
    - Glossary: glossary.md
