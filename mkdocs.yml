@@ -30,6 +30,9 @@ nav:
    - Micro Simulations:
       - Introductions: sims/index.md
 
+   - Stories:
+      - Introduction: stories/index.md
+      - GenAI Force Multiplier: stories/genai-force-multiplier/index.md
    
    - Prompts:
      - Introduction: prompts/index.md
