@@ -1,3 +1,12 @@
+---
+title: Generative AI Becomes a Force Multiplier for an Enterprise Architect
+description: A graphic novel story for Enterprise Architects about how generative AI can be a force multiplier for communication with stakeholders.
+image: /stories/genai-force-multiplier/cover.jpg
+og:image: /stories/genai-force-multiplier/cover.jpg
+twitter:image: /stories/genai-force-multiplier/cover.jpg
+social:
+   cards: false
+---
 # Generative AI Becomes a Force Multiplier for an Enterprise Architect
 ![](./cover.png)
 
