@@ -29,10 +29,17 @@
             margin-bottom: 20px;
         }
 
-        .file-input {
+        .file-input, .pattern-select {
             margin: 10px;
             padding: 8px 12px;
             font-size: 14px;
+        }
+
+        .pattern-select {
+            width: 400px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
 
         .load-button {
@@ -105,10 +112,10 @@
     </div>
 
     <div class="controls">
-        <input type="text" id="json-path" class="file-input"
-               placeholder="Enter JSON file path (e.g., ../../patterns/rag/rag.json)"
-               style="width: 400px;">
-        <button class="load-button" onclick="loadPattern()">Load Pattern</button>
+        <select id="pattern-select" class="pattern-select">
+            <option value="">Select an architecture pattern...</option>
+        </select>
+        <button class="load-button" onclick="loadSelectedPattern()">Load Pattern</button>
     </div>
 
     <div id="pattern-info" class="pattern-info" style="display: none;">
@@ -131,24 +138,67 @@
     <script>
         let network = null;
 
+        // Available pattern files (relative to the HTML file)
+        const PATTERN_FILES = [
+            { name: "RAG (Retrieval-Augmented Generation)", path: "../../patterns/rag/rag.json" },
+            { name: "Agentic Orchestration", path: "../../patterns/agentic-orchestration/agentic-orchestration.json" },
+            { name: "MCP Integration", path: "../../patterns/mcp-integration/mcp-integration.json" },
+            { name: "Fine-Tuned Model", path: "../../patterns/fine-tuned-model/fine-tuned-model.json" },
+            { name: "Federated Learning", path: "../../patterns/federated-learning/federated-learning.json" },
+            { name: "Multi-Modal AI", path: "../../patterns/multi-modal-ai/multi-modal-ai.json" },
+            { name: "Enterprise Security Gateway", path: "../../patterns/enterprise-security-gateway/enterprise-security-gateway.json" },
+            { name: "Model Versioning and A/B Testing", path: "../../patterns/model-versioning-and-ab-testing/model-versioning-and-ab-testing.json" },
+            { name: "Prompt Engineering and Template Management", path: "../../patterns/prompt-engineering-and-template-management/prompt-engineering-and-template-management.json" },
+            { name: "Real-Time Streaming AI", path: "../../patterns/real-time-streaming-ai/real-time-streaming-ai.json" }
+        ];
+
         // Parse URL parameters
         function getUrlParameter(name) {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
         }
 
+        // Populate dropdown with pattern options
+        function populatePatternDropdown() {
+            const select = document.getElementById('pattern-select');
+
+            PATTERN_FILES.forEach(pattern => {
+                const option = document.createElement('option');
+                option.value = pattern.path;
+                option.textContent = pattern.name;
+                select.appendChild(option);
+            });
+        }
+
         // Initialize on page load
         window.addEventListener('load', function() {
+            populatePatternDropdown();
+
             const jsonPath = getUrlParameter('json');
             if (jsonPath) {
-                document.getElementById('json-path').value = jsonPath;
-                loadPattern();
+                document.getElementById('pattern-select').value = jsonPath;
+                loadSelectedPattern();
             }
         });
 
+        // Load pattern from dropdown selection
+        function loadSelectedPattern() {
+            const select = document.getElementById('pattern-select');
+            const selectedPath = select.value;
+
+            if (!selectedPath) {
+                showError('Please select a pattern from the dropdown');
+                return;
+            }
+
+            loadPattern(selectedPath);
+        }
+
         // Load and display pattern
-        async function loadPattern() {
-            const jsonPath = document.getElementById('json-path').value.trim();
+        async function loadPattern(jsonPath) {
+            if (!jsonPath) {
+                jsonPath = document.getElementById('pattern-select').value.trim();
+            }
             const errorElement = document.getElementById('error-message');
             const patternInfoElement = document.getElementById('pattern-info');
 
@@ -324,11 +374,14 @@
             });
         }
 
-        // Add keyboard shortcut for loading
-        document.getElementById('json-path').addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                loadPattern();
-            }
+        // Add change event listener for dropdown
+        document.addEventListener('DOMContentLoaded', function() {
+            const select = document.getElementById('pattern-select');
+            select.addEventListener('change', function() {
+                if (this.value) {
+                    loadSelectedPattern();
+                }
+            });
         });
     </script>
 </body>
