@@ -1,6 +1,7 @@
 # Architecture Pattern Viewer
 
 [Run the Architecture Pattern Viewer](./arch-pattern-viewer.html)
+[RAG](arch-pattern-viewer.html?json=../../patterns/rag/rag.json)
 
 Perfect! I've created a comprehensive architecture pattern viewer at /docs/sims/arch-pattern-viewer/arch-pattern-viewer.html. Here's what the
   viewer includes:

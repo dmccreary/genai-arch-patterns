@@ -19,16 +19,27 @@ nav:
    
    - Patterns:
      - Introduction: patterns/index.md
+     - List of Patterns: patterns/list-of-patterns.md
+     - RAG: patterns/rag/index.md
+     - Agentic Orchestration: patterns/agentic-orchestration/index.md
+     - MCP Integration: patterns/mcp-integration/index.md
+     - Fine-Tuned Model: patterns/fine-tuned-model/index.md
+     - Federated Learning: patterns/federated-learning/index.md
+     - Multi-Modal AI: patterns/multi-modal-ai/index.md
+     - Enterprise Security Gateway: patterns/enterprise-security-gateway/index.md
+     - Model Versioning and A/B Testing: patterns/model-versioning-and-ab-testing/index.md
+     - Prompt Engineering and Template Management: patterns/prompt-engineering-and-template-management/index.md
+     - Real-Time Streaming AI: patterns/real-time-streaming-ai/index.md
      - Prompt Enrichment: patterns/prompt-enrichment.md
      - Finetuning: patterns/finetuning.md
      - Agent: patterns/agents.md
      - Code Interpreter: patterns/code-interpreter.md
      - Knowledge Representation: patterns/knowledge-representation.md
-     - RAG: patterns/rag.md
      - Similarity: patterns/similarity.md
-   
+
    - Micro Simulations:
-      - Introductions: sims/index.md
+      - Introduction: sims/index.md
+      - Architecture Pattern Viewer: sims/arch-pattern-viewer/arch-pattern-viewer.html
 
    
    - Prompts:
