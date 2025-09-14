@@ -169,3 +169,8 @@ some day generative AI could generate graphic novels to teach concepts in genera
 AI patterns.  Then she realized that would probably never happen.  AI is good at helping
 an enterprise architect be more productive, but generating a graphic novel would
 be hard.  It might not be possible...unless you were very clever at writing good prompts.
+
+## References
+
+1. [Anthropic Claude Sonnet 4.0 Original Dialog for Narrative](https://claude.ai/share/3577811d-c08b-4d17-867a-4cf896857699)
+2. [OpenAI GPT-5 Dialog for Images](https://chatgpt.com/share/68c6e061-4ef8-8001-a63c-d2769eeb22fe)
