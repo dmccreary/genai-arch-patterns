@@ -41,6 +41,9 @@ nav:
       - Introduction: sims/index.md
       - Architecture Pattern Viewer: sims/arch-pattern-viewer/arch-pattern-viewer.html
 
+   - Stories:
+      - Introduction: stories/index.md
+      - GenAI Force Multiplier: stories/genai-force-multiplier/index.md
    
    - Prompts:
      - Introduction: prompts/index.md
