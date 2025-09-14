@@ -55,6 +55,9 @@ nav:
        - prompts/knowledge-graph/concept-enumeration.md
        - prompts/knowledge-graph/concept-dependency.md
        - prompts/knowledge-graph/concept-taxonomy.md 
+   
+   - Presentations: slides.md
+   
    - Talks: talks.md
    - Contributing: contributing.md
    - Glossary: glossary.md
