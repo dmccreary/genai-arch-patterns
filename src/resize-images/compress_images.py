@@ -53,40 +53,72 @@ def compress_image(input_path, target_size_kb=300, min_compression=0, max_compre
             if original_size <= target_size_kb:
                 print(f"  Already optimized: {original_size:.1f}KB")
                 return True
-            
-            # Binary search for optimal compression level for PNG
-            low_compression = 0  # No compression (fastest)
-            high_compression = 9  # Maximum compression (slowest)
-            best_compression = 6  # Default PNG compression level
 
-            while low_compression <= high_compression:
-                mid_compression = (low_compression + high_compression) // 2
+            # Get original dimensions
+            original_width, original_height = img.size
+            print(f"  Original dimensions: {original_width}x{original_height}")
 
-                # Save to temp file to check size
+            # Try compression first with maximum setting
+            best_compression = 9
+            best_size = float('inf')
+            best_img = img.copy()
+
+            # Try different resize factors - be more aggressive for very large files
+            if original_size > 1000:  # Over 1MB, start with smaller sizes
+                resize_factors = [0.6, 0.5, 0.4, 0.35, 0.3, 0.25, 0.2, 0.15]
+            elif original_size > 500:  # Over 500KB
+                resize_factors = [0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.25, 0.2]
+            else:  # Smaller files, try compression first
+                resize_factors = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.25, 0.2]
+
+            for resize_factor in resize_factors:
+                # Resize image if needed
+                if resize_factor < 1.0:
+                    new_width = int(original_width * resize_factor)
+                    new_height = int(original_height * resize_factor)
+                    resized_img = img.resize((new_width, new_height), Image.Resampling.LANCZOS)
+                    print(f"  Trying resize: {resize_factor:.1%} ({new_width}x{new_height})")
+                else:
+                    resized_img = img
+                    print(f"  Trying original size with max compression")
+
+                # Try with maximum PNG compression
                 temp_path = str(input_path) + ".temp"
-                img.save(temp_path, "PNG", compress_level=mid_compression, optimize=True)
+                resized_img.save(temp_path, "PNG", compress_level=9, optimize=True)
                 temp_size = get_file_size_kb(temp_path)
 
+                print(f"    Result: {temp_size:.1f}KB")
+
+                # If we found a size that works, save it
                 if temp_size <= target_size_kb:
-                    best_compression = mid_compression
-                    high_compression = mid_compression - 1
-                else:
-                    low_compression = mid_compression + 1
+                    best_size = temp_size
+                    best_img = resized_img.copy()
+                    final_width, final_height = resized_img.size
+                    print(f"  ✓ Found suitable size: {temp_size:.1f}KB at {final_width}x{final_height}")
+                    os.remove(temp_path)
+                    break
 
                 os.remove(temp_path)
+
+            # If we couldn't get under target size, use the smallest we achieved
+            if best_size == float('inf'):
+                print(f"  Warning: Could not reach target size, using smallest achieved")
+                best_img = img.resize((int(original_width * 0.2), int(original_height * 0.2)), Image.Resampling.LANCZOS)
             
-            # Save with best compression found
+            # Save with best image found
             # Convert .jpg/.jpeg to .png format
             output_path = input_path
             if input_path.suffix.lower() in ['.jpg', '.jpeg']:
                 output_path = input_path.with_suffix('.png')
 
-            img.save(output_path, "PNG", compress_level=best_compression, optimize=True)
+            best_img.save(output_path, "PNG", compress_level=9, optimize=True)
 
             final_size = get_file_size_kb(output_path)
             compression_ratio = (1 - final_size / original_size) * 100
+            final_width, final_height = best_img.size
 
-            print(f"  Compressed: {original_size:.1f}KB → {final_size:.1f}KB (Level {best_compression}, {compression_ratio:.1f}% reduction)")
+            print(f"  Final result: {original_size:.1f}KB → {final_size:.1f}KB ({compression_ratio:.1f}% reduction)")
+            print(f"  Dimensions: {original_width}x{original_height} → {final_width}x{final_height}")
 
             # If we converted JPG to PNG, remove the original JPG
             if output_path != input_path:
