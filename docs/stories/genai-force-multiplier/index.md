@@ -65,7 +65,7 @@ At 2:47 AM on a Tuesday (because that's when all good ideas happen), Lynda disco
    Lynda works intensely at her computer, multiple AI chat windows open alongside her technical diagrams. Colorful sticky notes cover her monitors with prompts and ideas. The scene shows her technical drawings on one side transforming through AI assistance into engaging presentations, infographics, and simple analogies on the other side. Coffee cups and energy drink cans suggest she's been at this for hours.
 </details>
 
-Lynda becomes a prompt engineering wizard overnight. "Create an analogy comparing enterprise data governance to a well-run restaurant kitCarver ," she types, grinning as the AI spits out gold: "Just like a head chef controls who can access the walk-in freezer, your data needs role-based permissions at every level." She's discovered that generative AI isn't just a tool—it's her personal translation service from "architectural genius" to "something the C-suite might actually understand." *Who knew the secret to enterprise architecture success was learning to speak CFO?*
+Lynda becomes a prompt engineering wizard overnight. "Create an analogy comparing enterprise data governance to a well-run restaurant" she types, grinning as the AI spits out gold: "Just like a head chef controls who can access the walk-in freezer, your data needs role-based permissions at every level." She's discovered that generative AI isn't just a tool—it's her personal translation service from "architectural genius" to "something the C-suite might actually understand." *Who knew the secret to enterprise architecture success was learning to speak CFO?*
 
 ## Panel 6: The Presentation Phoenix
 ![](./image-06.png)
