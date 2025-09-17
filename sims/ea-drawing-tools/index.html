@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ea-drawing-tools" class="md-skip">
+        <a href="#key-features-for-ai-generated-architecture-diagrams" class="md-skip">
           Skip to content
         </a>
       
@@ -321,6 +321,8 @@
       
         
           
+        
+      
         
       
         
@@ -599,6 +601,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Drawing Tools
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -608,6 +621,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json-based-diagram-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON-Based Diagram Representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-diff-capabilities-for-json-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Diff Capabilities for JSON Files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-clustering-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smart Clustering Capabilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extended-interactivity-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Interactivity Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-node-type-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Node Type Library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-critical-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Critical Features
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -888,6 +974,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#json-based-diagram-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSON-Based Diagram Representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-diff-capabilities-for-json-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Diff Capabilities for JSON Files
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-clustering-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smart Clustering Capabilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extended-interactivity-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extended Interactivity Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprehensive-node-type-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprehensive Node Type Library
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-critical-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional Critical Features
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -904,7 +1052,75 @@
   
 
 
-<h1 id="ea-drawing-tools">EA Drawing Tools</h1>
+<h1 id="key-features-for-ai-generated-architecture-diagrams">Key Features for AI-Generated Architecture Diagrams</h1>
+<p>We want to use an LLM to generate our AI drawings in a <em>declarative</em> way.<br />
+By declarative, we want the drawing to specify <em>what</em> should be drawn, how the elements are connected
+but not focus on the details of drawing the diagrams such as pixel-by-pixel placement or what
+colors and font types to use.  These parameters should be part of the overall site design
+specification.</p>
+<p>We want to store the drawings in a JSON format that is independent of a specific drawing tool.</p>
+<h2 id="json-based-diagram-representation">JSON-Based Diagram Representation</h2>
+<p><strong>Structured Data Format</strong>
+JSON provides a machine-readable format that AI can easily generate, modify, and version. The schema should include nodes (architectural components), edges (relationships), layout information, and metadata for interactive features.</p>
+<p><strong>Standardized Schema Design</strong>
+Develop a consistent JSON schema that captures:
+- Node properties (type, position, styling, metadata)
+- Edge definitions (source, target, relationship type, styling)
+- Layout configurations (clustering rules, positioning constraints)
+- Interactive elements (hover content, click actions, documentation links)
+- Versioning metadata (creation date, AI model used, validation status)</p>
+<p><strong>AI Generation Compatibility</strong>
+Structure the JSON format to align with how large language models naturally represent architectural concepts, making it easier for AI to generate syntactically correct and semantically meaningful diagrams.</p>
+<h2 id="visual-diff-capabilities-for-json-files">Visual Diff Capabilities for JSON Files</h2>
+<p><strong>Semantic Change Detection</strong>
+Beyond standard text-based diffs, implement visual diff tools that understand architectural semantics - detecting when services are added/removed, relationships change, or component types are modified.</p>
+<p><strong>Side-by-Side Diagram Comparison</strong>
+Render two versions of architecture diagrams simultaneously, highlighting differences through color coding, annotations, and change indicators directly on the visual elements.</p>
+<p><strong>Change Impact Analysis</strong>
+AI-powered analysis of JSON diffs to identify cascading effects of architectural changes, such as when a database modification impacts multiple dependent services.</p>
+<p><strong>Version History Visualization</strong>
+Timeline-based interface showing how architecture has evolved over time, with the ability to compare any two versions and understand the rationale behind changes.</p>
+<h2 id="smart-clustering-capabilities">Smart Clustering Capabilities</h2>
+<p><strong>Automatic Grouping Logic</strong>
+AI algorithms that analyze node relationships, data flow patterns, and functional domains to automatically cluster related components into logical groupings.</p>
+<p><strong>Hierarchical Organization</strong>
+Multi-level clustering that can represent architecture at different abstraction levels - from high-level business domains down to individual microservices and their dependencies.</p>
+<p><strong>Dynamic Reclustering</strong>
+Ability to reorganize clusters based on different criteria (technology stack, team ownership, security zones, deployment environments) without losing the underlying architectural relationships.</p>
+<p><strong>Cluster Metadata Management</strong>
+Rich information about each cluster including ownership, SLA requirements, security boundaries, and compliance considerations that can be leveraged for automated documentation and governance.</p>
+<h2 id="extended-interactivity-features">Extended Interactivity Features</h2>
+<p><strong>Multi-Layer Information Architecture</strong>
+Hover interactions that reveal progressively detailed information - from basic component descriptions to detailed technical specifications, performance metrics, and operational status.</p>
+<p><strong>Contextual Documentation Links</strong>
+Smart linking that connects diagram elements to relevant sections of technical documentation, runbooks, API specifications, and architectural decision records (ADRs).</p>
+<p><strong>Interactive Filtering and Exploration</strong>
+Dynamic filtering capabilities that allow users to focus on specific technology stacks, teams, environments, or architectural concerns while maintaining context of the broader system.</p>
+<p><strong>Guided Navigation Workflows</strong>
+AI-generated pathways through complex architectures that guide users through common exploration patterns like data flow analysis, security review, or impact assessment.</p>
+<h2 id="comprehensive-node-type-library">Comprehensive Node Type Library</h2>
+<p><strong>Infrastructure Components</strong>
+Extensive library of database nodes (relational, NoSQL, graph, time-series), messaging systems (queues, event streams, pub/sub), and storage solutions (object stores, file systems, CDNs).</p>
+<p><strong>Application Architecture Elements</strong>
+Microservice nodes, API gateways, load balancers, caching layers, and authentication services with appropriate visual styling and metadata schemas.</p>
+<p><strong>Network and Security Boundaries</strong>
+Specialized nodes for firewalls, VPNs, security zones, network segments, and compliance boundaries that can be used to overlay security architecture onto application diagrams.</p>
+<p><strong>Monitoring and Observability</strong>
+Status indicator nodes that can display real-time health metrics, alert states, and performance indicators, with the ability to drill down into detailed monitoring dashboards.</p>
+<p><strong>Integration Pattern Nodes</strong>
+Visual representations of common integration patterns like circuit breakers, retry mechanisms, saga patterns, and event sourcing components.</p>
+<h2 id="additional-critical-features">Additional Critical Features</h2>
+<p><strong>Template and Pattern Libraries</strong>
+Pre-built architectural patterns (microservices, event-driven, layered architecture) that AI can use as starting points and customize based on specific requirements.</p>
+<p><strong>Validation and Consistency Checking</strong>
+AI-powered validation that ensures architectural diagrams follow organizational standards, detect potential anti-patterns, and verify that all required documentation links are present and valid.</p>
+<p><strong>Export and Integration Capabilities</strong>
+Support for exporting diagrams in multiple formats (SVG, PNG, PDF) while preserving interactive elements where possible, and integration with popular documentation platforms and architectural tools.</p>
+<p><strong>Collaborative Annotation System</strong>
+Features for multiple stakeholders to add comments, suggestions, and approvals directly to diagram elements, with workflow support for architectural review processes.</p>
+<p><strong>Automated Synchronization</strong>
+Capability to automatically update diagrams based on changes detected in source code repositories, infrastructure as code definitions, or service discovery systems.</p>
+<p>These features create a comprehensive platform that leverages AI to transform how enterprise architects create, maintain, and interact with architectural documentation, making it both more accurate and more useful for stakeholders across the organization.</p>
 
 
 
