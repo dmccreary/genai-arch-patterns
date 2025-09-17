@@ -23,6 +23,7 @@ nav:
      - Knowledge Graph: concepts/knowledge-graph.md
      - Cosine Similarity: concepts/cosine-similarity.md
      - Vector Database: concepts/vector-database.md
+     - Enterprise Architecture Drawing Types: concepts/ea-drawing-types.md
    
    - Patterns:
      - Introduction: patterns/index.md
