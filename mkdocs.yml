@@ -1,5 +1,12 @@
-# mkdocs file for generating microsite
+# YAML file for Signal Processing with AI website
 site_name: Generative AI Architecture Patterns
+site_description: 'A collection of architectural patterns and concepts for building applications with generative AI.'
+site_author: 'Dan McCreary'
+repo_name: 'GitHub Repo'
+site_url: 'https://dmccreary.github.io/genai-arch-patterns/'
+repo_url: 'https://github.com/dmccreary/genai-arch-patterns/'
+edit_uri: 'blob/master/docs'
+
 nav:
    - Home: index.md
    - About This Book: about.md
@@ -34,7 +41,7 @@ nav:
      - Finetuning: patterns/finetuning.md
      - Agent: patterns/agents.md
      - Code Interpreter: patterns/code-interpreter.md
-     - Knowledge Representation: patterns/knowledge-representation.md
+     - Learning Graph: patterns/learning-graph.md
      - Similarity: patterns/similarity.md
 
    - MicroSims:
@@ -87,17 +94,35 @@ theme:
     - navigation.top
     # this adds the prev and next icons in the footer
     - navigation.footer
+plugins:
+  - search
+  - social
+  - social_override
+  # exclude template files from the build
+  - exclude:
+      glob:
+        - "*template/*.md"
+        - "*templates/*.md"
 markdown_extensions:
+  - meta
   - admonition
-  - pymdownx.details  
-  - footnotes
   - attr_list
   - md_in_html
-  - toc:
-      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.emoji
+  - pymdownx.tilde
+  - pymdownx.tasklist
+  - pymdownx.tabbed
   - pymdownx.highlight:
       linenums: true
-  - pymdownx.superfences
+  # enable LaTeX equation rendering
+  - pymdownx.arithmatex:
+      generic: true
 # Google Analytics MEASUREMENT ID: G-QD0XE8V1HL
 # https://analytics.google.com/analytics/web/?authuser=0#/p406011100/reports/intelligenthome
 extra:
