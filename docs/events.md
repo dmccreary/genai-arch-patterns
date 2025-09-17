@@ -3,7 +3,8 @@
 ## Accelerating GenAI AEA Webinar
 
 ![](./img/sep-17th-webinar.png)
-On Wed. Sept 17th we will be hosting a one hour update on our progress.
+
+On Wed. Sept 17th at 3pm we will be hosting a one hour update on our progress.
 
 How GenAI is a Force Multiplier for EAA
 

@@ -20,7 +20,7 @@ Agents run with a degree of independence. They gather and analyze information fr
 
 The process of auditing the use of agents within a generative AI-driven architecture.  Audit includes how much resources agents consume to achieve their goals including the use of CPU, memory, data use and the cost of calling APIs that have chargebacks.
 
-* See also: [Saftey](#safety)
+* See also: [Safety](#safety)
 
 #### ChatGPT
 
