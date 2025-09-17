@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/model-versioning-and-ab-testing/">
       
       
         <link rel="prev" href="../enterprise-security-gateway/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Model Versioning and A/B Testing - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/model-versioning-and-ab-testing/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/model-versioning-and-ab-testing/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Model Versioning and A/B Testing - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/model-versioning-and-ab-testing/index.png" >
+      
     
     
   </head>
@@ -848,11 +880,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1249,11 +1281,11 @@
   
 
 
-<h1 id="model-versioning-and-ab-testing-pattern">Model Versioning and A/B Testing Pattern<a class="headerlink" href="#model-versioning-and-ab-testing-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="model-versioning-and-ab-testing-pattern">Model Versioning and A/B Testing Pattern</h1>
 <p>A deployment pattern that manages multiple versions of AI models simultaneously, enabling controlled rollouts, performance comparisons, and gradual migrations. This pattern supports experimentation and risk mitigation in production AI systems.</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
 <p>Use this pattern when you need to test new model versions safely, compare performance between different approaches, or gradually roll out model updates. Essential for production systems where model changes need validation and when business impact needs to be measured systematically.</p>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>The architecture illustrates a traffic routing system that directs requests to different model versions based on configured rules, with comprehensive monitoring and comparison capabilities.</p>
 <p><strong>Components:</strong>
 - User Requests (250, 50)
@@ -1278,9 +1310,9 @@
 - Performance Monitor → Metrics Collector: "Performance Data"
 - Metrics Collector → Results Analyzer: "Aggregated Metrics"
 - Model Registry → Traffic Router: "Available Models"</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
 <p>Fine-Tuned Model Pattern, Blue-Green Deployment Pattern, Performance Monitoring Pattern</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="references">References</h2>
 <ol>
 <li><a href="https://arxiv.org/abs/2006.10254">Continuous Integration and Deployment for Machine Learning</a> - 2020 - arXiv - Comprehensive guide to CI/CD practices specifically for machine learning systems</li>
 <li><a href="https://www.uber.com/blog/experimentation-platform/">A/B Testing for Machine Learning Models</a> - 2018 - Uber Engineering - Real-world implementation of A/B testing infrastructure for ML models at scale</li>
@@ -1292,6 +1324,9 @@
 
 
 
+
+  
+  
 
 
 

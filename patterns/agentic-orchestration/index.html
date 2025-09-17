@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/agentic-orchestration/">
       
       
         <link rel="prev" href="../rag/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Agentic Orchestration - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/agentic-orchestration/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/agentic-orchestration/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Agentic Orchestration - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/agentic-orchestration/index.png" >
+      
     
     
   </head>
@@ -848,11 +880,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1249,11 +1281,11 @@
   
 
 
-<h1 id="agentic-orchestration-pattern">Agentic Orchestration Pattern<a class="headerlink" href="#agentic-orchestration-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="agentic-orchestration-pattern">Agentic Orchestration Pattern</h1>
 <p>A sophisticated pattern where multiple AI agents work together in a coordinated manner, each with specialized capabilities and tools. Agents can communicate, delegate tasks, and combine their outputs to solve complex multi-step problems that require different types of reasoning or access to various systems.</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
 <p>Use this pattern for complex workflows that require multiple specialized skills, when tasks need to be broken down into subtasks handled by different agents, or when you need agents that can use tools, make decisions, and adapt their approach based on intermediate results. Ideal for business process automation, complex research tasks, and multi-domain problem solving.</p>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>The architecture depicts a central orchestrator managing multiple specialized agents, each with access to specific tools and services, with a shared memory system for context and coordination.</p>
 <p><strong>Components:</strong>
 - User Interface (100, 50)
@@ -1275,9 +1307,9 @@
 - Shared Memory Store → All Agents: "Context Retrieval"
 - Action Agent → External APIs: "Tool Execution"
 - Tool Registry → Action Agent: "Available Tools"</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
 <p>MCP Integration Pattern, Multi-Agent Collaboration Pattern, Tool-Augmented LLM Pattern</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="references">References</h2>
 <ol>
 <li><a href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT: An Autonomous GPT-4 Experiment</a> - 2023 - GitHub - Open-source implementation demonstrating autonomous agent capabilities and task decomposition</li>
 <li><a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a> - 2022 - arXiv - Framework for combining reasoning and acting in language models through structured prompting</li>
@@ -1289,6 +1321,9 @@
 
 
 
+
+  
+  
 
 
 

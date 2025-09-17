@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/multi-modal-ai/">
       
       
         <link rel="prev" href="../federated-learning/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Multi-Modal AI - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/multi-modal-ai/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/multi-modal-ai/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Multi-Modal AI - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/multi-modal-ai/index.png" >
+      
     
     
   </head>
@@ -848,11 +880,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1249,11 +1281,11 @@
   
 
 
-<h1 id="multi-modal-ai-pattern">Multi-Modal AI Pattern<a class="headerlink" href="#multi-modal-ai-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="multi-modal-ai-pattern">Multi-Modal AI Pattern</h1>
 <p>An integration pattern that combines multiple types of AI models to process different data modalities (text, images, audio, video) within a single application. This pattern enables more comprehensive understanding and generation across various media types.</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
 <p>Use this pattern when applications need to understand or generate content across multiple media types, when context spans different modalities, or when you need to provide rich, multimedia responses. Essential for content creation platforms, educational systems, and comprehensive document analysis applications.</p>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>The architecture demonstrates multiple specialized models for different modalities coordinated through a central fusion engine that combines insights and generates multi-modal responses.</p>
 <p><strong>Components:</strong>
 - User Interface (300, 50)
@@ -1277,9 +1309,9 @@
 - Response Generator → User Interface: "Multi-Modal Response"
 - Vector Store → Multi-Modal Fusion Engine: "Cross-Modal Context"
 - Context Manager → Multi-Modal Fusion Engine: "Session Context"</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
 <p>RAG Pattern, Content Generation Pipeline Pattern, Unified Embedding Pattern</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="references">References</h2>
 <ol>
 <li><a href="https://arxiv.org/abs/2204.14198">Flamingo: a Visual Language Model for Few-Shot Learning</a> - 2022 - arXiv - Breakthrough model demonstrating effective multi-modal learning with few-shot capabilities</li>
 <li><a href="https://arxiv.org/abs/2103.00020">CLIP: Learning Transferable Visual Representations from Natural Language Supervision</a> - 2021 - arXiv - Foundational work on joint vision-language understanding and cross-modal retrieval</li>
@@ -1291,6 +1323,9 @@
 
 
 
+
+  
+  
 
 
 

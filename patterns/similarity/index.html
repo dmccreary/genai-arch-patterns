@@ -6,10 +6,16 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
       
+        <meta name="author" content="Dan McCreary">
       
-        <link rel="prev" href="../knowledge-representation/">
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/similarity/">
+      
+      
+        <link rel="prev" href="../code-interpreter/">
       
       
         <link rel="next" href="../../sims/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Similarity - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/similarity.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/similarity/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Similarity - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/similarity.png" >
+      
     
     
   </head>
@@ -772,11 +804,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1195,7 +1227,7 @@
   
 
 
-<h1 id="similarity-architecture-pattern-in-generative-ai">Similarity Architecture Pattern in Generative AI<a class="headerlink" href="#similarity-architecture-pattern-in-generative-ai" title="Permanent link">&para;</a></h1>
+<h1 id="similarity-architecture-pattern-in-generative-ai">Similarity Architecture Pattern in Generative AI</h1>
 <p>The Similarity architectural pattern focuses on finding or generating data that is "similar" to existing data samples based on some criteria or metrics. This approach is often used in recommendation systems, personalized content generation, and other applications where the goal is not to generate something entirely new but to find or create data closely resembling the existing ones.</p>
 <p>In this architecture, the generative model is trained on existing data and a similarity metric. The objective is to generate samples that minimize (or maximize) this similarity metric when compared to a given set of data. The architecture often involves a combination of other generative models like GANs, VAEs, or RNNs, along with a defined similarity or distance function like cosine similarity, Euclidean distance, or custom domain-specific metrics.</p>
 <ul>
@@ -1205,7 +1237,7 @@
 <li>Metric Learning</li>
 <li><a href="../../glossary/#concept-index">Concept Index</a></li>
 </ul>
-<h5 id="examples-in-business-applications">Examples in Business Applications<a class="headerlink" href="#examples-in-business-applications" title="Permanent link">&para;</a></h5>
+<h5 id="examples-in-business-applications">Examples in Business Applications</h5>
 <ol>
 <li>
 <p><strong>Personalized Marketing Content</strong>: Businesses can use the Similarity pattern to generate marketing material that is closely tailored to an individual customer's previous interactions or preferences, improving user engagement and ROI.</p>
@@ -1233,6 +1265,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -1264,7 +1299,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../knowledge-representation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Knowledge Representation">
+          <a href="../code-interpreter/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Code Interpreter">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1274,7 +1309,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Knowledge Representation
+                Code Interpreter
               </div>
             </div>
           </a>

@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/enterprise-security-gateway/">
       
       
         <link rel="prev" href="../multi-modal-ai/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Enterprise Security Gateway - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/enterprise-security-gateway/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/enterprise-security-gateway/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Enterprise Security Gateway - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/enterprise-security-gateway/index.png" >
+      
     
     
   </head>
@@ -848,11 +880,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1249,11 +1281,11 @@
   
 
 
-<h1 id="enterprise-security-gateway-pattern">Enterprise Security Gateway Pattern<a class="headerlink" href="#enterprise-security-gateway-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="enterprise-security-gateway-pattern">Enterprise Security Gateway Pattern</h1>
 <p>A security-focused pattern that provides centralized authentication, authorization, and monitoring for all AI service interactions within an enterprise. This pattern ensures compliance, audit trails, and proper access controls across all generative AI applications.</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
 <p>Use this pattern in enterprise environments with strict security requirements, regulatory compliance needs, or when multiple AI services need consistent security policies. Essential for financial services, healthcare, government, and other highly regulated industries.</p>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>The architecture shows all AI service requests flowing through a centralized security gateway that handles authentication, authorization, logging, and compliance before routing to appropriate AI services.</p>
 <p><strong>Components:</strong>
 - User Applications (200, 50)
@@ -1277,9 +1309,9 @@
 - Security Gateway → Audit Logger: "Request Log"
 - Audit Logger → Compliance Monitor: "Audit Trail"
 - Compliance Monitor → Security Gateway: "Policy Updates"</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
 <p>MCP Integration Pattern, Zero Trust Architecture Pattern, API Management Pattern</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="references">References</h2>
 <ol>
 <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> - 2023 - NIST - Comprehensive framework for managing AI risks in enterprise environments</li>
 <li><a href="https://cloud.google.com/security/ai-ml">Enterprise AI Security Best Practices</a> - 2024 - Google Cloud - Practical guide for securing AI/ML workloads in enterprise cloud environments</li>
@@ -1291,6 +1323,9 @@
 
 
 
+
+  
+  
 
 
 

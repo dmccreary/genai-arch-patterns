@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/prompt-engineering-and-template-management/">
       
       
         <link rel="prev" href="../model-versioning-and-ab-testing/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Prompt Engineering and Template Management - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/prompt-engineering-and-template-management/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/prompt-engineering-and-template-management/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Prompt Engineering and Template Management - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/prompt-engineering-and-template-management/index.png" >
+      
     
     
   </head>
@@ -848,11 +880,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1249,11 +1281,11 @@
   
 
 
-<h1 id="prompt-engineering-and-template-management-pattern">Prompt Engineering and Template Management Pattern<a class="headerlink" href="#prompt-engineering-and-template-management-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="prompt-engineering-and-template-management-pattern">Prompt Engineering and Template Management Pattern</h1>
 <p>A governance pattern that centralizes prompt design, versioning, and optimization across an organization. This pattern ensures consistency, enables prompt reuse, and provides systematic approaches to prompt improvement and testing.</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
 <p>Use this pattern when multiple teams are using similar prompts, when you need consistent prompt quality across applications, or when prompt performance optimization is critical. Essential for large organizations with multiple AI applications and when prompt intellectual property needs protection.</p>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>The architecture shows a centralized prompt management system that stores, versions, and optimizes prompts, with testing capabilities and integration points for various applications.</p>
 <p><strong>Components:</strong>
 - Prompt Repository (300, 50)
@@ -1275,9 +1307,9 @@
 - Performance Analyzer → Metrics Dashboard: "Analysis Results"
 - Application Integration → Template Engine: "Prompt Requests"
 - Metrics Dashboard → Prompt Designer Interface: "Optimization Insights"</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
 <p>Model Versioning Pattern, Content Generation Pipeline Pattern, Quality Assurance Pattern</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="references">References</h2>
 <ol>
 <li><a href="https://arxiv.org/abs/2201.11903">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a> - 2022 - arXiv - Foundational research on structured prompting techniques for improved reasoning</li>
 <li><a href="https://arxiv.org/abs/2212.08073">Constitutional AI: Harmlessness from AI Feedback</a> - 2022 - Anthropic - Advanced prompting techniques for building more helpful, harmless, and honest AI systems</li>
@@ -1289,6 +1321,9 @@
 
 
 
+
+  
+  
 
 
 

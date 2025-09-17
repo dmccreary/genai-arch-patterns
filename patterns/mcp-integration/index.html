@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/mcp-integration/">
       
       
         <link rel="prev" href="../agentic-orchestration/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="MCP Integration - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/mcp-integration/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/mcp-integration/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="MCP Integration - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/mcp-integration/index.png" >
+      
     
     
   </head>
@@ -848,11 +880,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1249,11 +1281,11 @@
   
 
 
-<h1 id="mcp-model-context-protocol-integration-pattern">MCP (Model Context Protocol) Integration Pattern<a class="headerlink" href="#mcp-model-context-protocol-integration-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="mcp-model-context-protocol-integration-pattern">MCP (Model Context Protocol) Integration Pattern</h1>
 <p>A standardization pattern that enables Large Language Models to securely connect with external data sources and tools through a unified protocol. MCP provides a consistent interface for LLMs to interact with various systems while maintaining security boundaries and proper access controls.</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
 <p>Use this pattern when you need to connect LLMs to multiple external systems with standardized interfaces, when security and access control are critical, or when you want to create reusable integrations that work across different LLM providers. Essential for enterprise environments requiring controlled access to sensitive systems and data sources.</p>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>The architecture shows LLMs connecting to various external systems through MCP servers, with a central MCP registry managing available resources and security policies.</p>
 <p><strong>Components:</strong>
 - LLM Client (200, 50)
@@ -1276,9 +1308,9 @@
 - API MCP Server → External API: "API Call"
 - File System MCP Server → File Storage: "File Operations"
 - Resource Manager → MCP Registry: "Resource Metadata"</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
 <p>Agentic Orchestration Pattern, Enterprise Security Gateway Pattern, Tool-Augmented LLM Pattern</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="references">References</h2>
 <ol>
 <li><a href="https://modelcontextprotocol.io/docs">Model Context Protocol Specification</a> - 2024 - Anthropic - Official specification defining the MCP standard for connecting LLMs to external resources</li>
 <li><a href="https://docs.anthropic.com/claude/docs/mcp">Building Secure AI Integrations with MCP</a> - 2024 - Anthropic Documentation - Practical guide for implementing secure LLM integrations using MCP</li>
@@ -1290,6 +1322,9 @@
 
 
 
+
+  
+  
 
 
 

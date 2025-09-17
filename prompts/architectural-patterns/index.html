@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/prompts/architectural-patterns/">
       
       
         <link rel="prev" href="../knowledge-graph/concept-taxonomy/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Intro - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/prompts/architectural-patterns/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/prompts/architectural-patterns/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Intro - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/prompts/architectural-patterns/index.png" >
+      
     
     
   </head>
@@ -1058,29 +1090,29 @@
   
 
 
-<h1 id="list-of-architectural-patterns">List of Architectural Patterns<a class="headerlink" href="#list-of-architectural-patterns" title="Permanent link">&para;</a></h1>
+<h1 id="list-of-architectural-patterns">List of Architectural Patterns</h1>
 <div class="admonition prompt">
 <p class="admonition-title">Prompt</p>
 <p>Please generate a list of the top 10 main architecture patterns around generative AI, LLMs, Vector stores, Agents and MCPs in a large enterprise.  </p>
 <p>For each pattern return the information in the following template:</p>
-<h2 id="pattern-name">Pattern Name<a class="headerlink" href="#pattern-name" title="Permanent link">&para;</a></h2>
+<h2 id="pattern-name">Pattern Name</h2>
 <p>Text description of the pattern</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>Detailed description of a high-level architecture drawing that describes this pattern.  Include a list of all the components in the drawing, their (x,y) position on the drawing (assume (0,0) at the upper left, and a list of all the edges that connect the components.  For each edge, give it a label.</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
-<h2 id="three-references">Three References<a class="headerlink" href="#three-references" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
+<h2 id="three-references">Three References</h2>
 <ol>
 <li><a href="URL">URL Title</a> - date - publication_name - description an relevance to this pattern</li>
 </ol>
 </div>
-<h2 id="response">Response<a class="headerlink" href="#response" title="Permanent link">&para;</a></h2>
-<h1 id="top-10-generative-ai-architecture-patterns-for-large-enterprises">Top 10 Generative AI Architecture Patterns for Large Enterprises<a class="headerlink" href="#top-10-generative-ai-architecture-patterns-for-large-enterprises" title="Permanent link">&para;</a></h1>
-<h2 id="1-rag-retrieval-augmented-generation-pattern">1. RAG (Retrieval-Augmented Generation) Pattern<a class="headerlink" href="#1-rag-retrieval-augmented-generation-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="response">Response</h2>
+<h1 id="top-10-generative-ai-architecture-patterns-for-large-enterprises">Top 10 Generative AI Architecture Patterns for Large Enterprises</h1>
+<h2 id="1-rag-retrieval-augmented-generation-pattern">1. RAG (Retrieval-Augmented Generation) Pattern</h2>
 <p>A foundational pattern that enhances Large Language Models by retrieving relevant information from external knowledge bases before generating responses. This pattern combines the generative capabilities of LLMs with the accuracy and freshness of retrieved documents, reducing hallucinations and providing source attribution.</p>
-<h3 id="when-to-use_1">When to Use<a class="headerlink" href="#when-to-use_1" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_1">When to Use</h3>
 <p>Use this pattern when you need to provide accurate, up-to-date information that may not be in the LLM's training data, when you require source attribution for generated content, or when working with proprietary or domain-specific knowledge bases. Ideal for customer support systems, knowledge management platforms, and technical documentation assistance.</p>
-<h3 id="architecture-drawing_1">Architecture Drawing<a class="headerlink" href="#architecture-drawing_1" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_1">Architecture Drawing</h3>
 <p>The architecture shows a user query flowing through an embedding service to a vector store for similarity search, retrieving relevant documents that are combined with the original query and sent to an LLM for final response generation.</p>
 <p><strong>Components:</strong>
 - User Interface (50, 50)
@@ -1099,19 +1131,19 @@
 - Query Processing Service → LLM Service: "Original Query"
 - LLM Service → Response Handler: "Generated Response"
 - Response Handler → User Interface: "Final Answer"</p>
-<h3 id="related-patterns_1">Related Patterns<a class="headerlink" href="#related-patterns_1" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_1">Related Patterns</h3>
 <p>Fine-tuned Model Pattern, Agentic RAG Pattern, Multi-Modal RAG Pattern</p>
-<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<h3 id="references">References</h3>
 <ol>
 <li><a href="https://arxiv.org/abs/2005.11401">Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</a> - 2020 - arXiv - Original paper introducing RAG methodology and its effectiveness in knowledge-intensive tasks</li>
 <li><a href="https://arxiv.org/abs/2401.08406">RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture</a> - 2024 - arXiv - Comprehensive comparison of RAG versus fine-tuning approaches for domain-specific applications</li>
 <li><a href="https://arxiv.org/abs/2401.05856">Seven Failure Points When Engineering a Retrieval Augmented Generation System</a> - 2024 - arXiv - Practical guide identifying common pitfalls and solutions in RAG implementation</li>
 </ol>
-<h2 id="2-agentic-orchestration-pattern">2. Agentic Orchestration Pattern<a class="headerlink" href="#2-agentic-orchestration-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="2-agentic-orchestration-pattern">2. Agentic Orchestration Pattern</h2>
 <p>A sophisticated pattern where multiple AI agents work together in a coordinated manner, each with specialized capabilities and tools. Agents can communicate, delegate tasks, and combine their outputs to solve complex multi-step problems that require different types of reasoning or access to various systems.</p>
-<h3 id="when-to-use_2">When to Use<a class="headerlink" href="#when-to-use_2" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_2">When to Use</h3>
 <p>Use this pattern for complex workflows that require multiple specialized skills, when tasks need to be broken down into subtasks handled by different agents, or when you need agents that can use tools, make decisions, and adapt their approach based on intermediate results. Ideal for business process automation, complex research tasks, and multi-domain problem solving.</p>
-<h3 id="architecture-drawing_2">Architecture Drawing<a class="headerlink" href="#architecture-drawing_2" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_2">Architecture Drawing</h3>
 <p>The architecture depicts a central orchestrator managing multiple specialized agents, each with access to specific tools and services, with a shared memory system for context and coordination.</p>
 <p><strong>Components:</strong>
 - User Interface (100, 50)
@@ -1133,19 +1165,19 @@
 - Shared Memory Store → All Agents: "Context Retrieval"
 - Action Agent → External APIs: "Tool Execution"
 - Tool Registry → Action Agent: "Available Tools"</p>
-<h3 id="related-patterns_2">Related Patterns<a class="headerlink" href="#related-patterns_2" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_2">Related Patterns</h3>
 <p>MCP Integration Pattern, Multi-Agent Collaboration Pattern, Tool-Augmented LLM Pattern</p>
-<h3 id="references_1">References<a class="headerlink" href="#references_1" title="Permanent link">&para;</a></h3>
+<h3 id="references_1">References</h3>
 <ol>
 <li><a href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT: An Autonomous GPT-4 Experiment</a> - 2023 - GitHub - Open-source implementation demonstrating autonomous agent capabilities and task decomposition</li>
 <li><a href="https://arxiv.org/abs/2210.03629">ReAct: Synergizing Reasoning and Acting in Language Models</a> - 2022 - arXiv - Framework for combining reasoning and acting in language models through structured prompting</li>
 <li><a href="https://arxiv.org/abs/2308.10848">Multi-Agent Programming with ChatGPT</a> - 2023 - arXiv - Exploration of multi-agent systems using large language models for collaborative problem solving</li>
 </ol>
-<h2 id="3-mcp-model-context-protocol-integration-pattern">3. MCP (Model Context Protocol) Integration Pattern<a class="headerlink" href="#3-mcp-model-context-protocol-integration-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="3-mcp-model-context-protocol-integration-pattern">3. MCP (Model Context Protocol) Integration Pattern</h2>
 <p>A standardization pattern that enables Large Language Models to securely connect with external data sources and tools through a unified protocol. MCP provides a consistent interface for LLMs to interact with various systems while maintaining security boundaries and proper access controls.</p>
-<h3 id="when-to-use_3">When to Use<a class="headerlink" href="#when-to-use_3" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_3">When to Use</h3>
 <p>Use this pattern when you need to connect LLMs to multiple external systems with standardized interfaces, when security and access control are critical, or when you want to create reusable integrations that work across different LLM providers. Essential for enterprise environments requiring controlled access to sensitive systems and data sources.</p>
-<h3 id="architecture-drawing_3">Architecture Drawing<a class="headerlink" href="#architecture-drawing_3" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_3">Architecture Drawing</h3>
 <p>The architecture shows LLMs connecting to various external systems through MCP servers, with a central MCP registry managing available resources and security policies.</p>
 <p><strong>Components:</strong>
 - LLM Client (200, 50)
@@ -1168,19 +1200,19 @@
 - API MCP Server → External API: "API Call"
 - File System MCP Server → File Storage: "File Operations"
 - Resource Manager → MCP Registry: "Resource Metadata"</p>
-<h3 id="related-patterns_3">Related Patterns<a class="headerlink" href="#related-patterns_3" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_3">Related Patterns</h3>
 <p>Agentic Orchestration Pattern, Enterprise Security Gateway Pattern, Tool-Augmented LLM Pattern</p>
-<h3 id="references_2">References<a class="headerlink" href="#references_2" title="Permanent link">&para;</a></h3>
+<h3 id="references_2">References</h3>
 <ol>
 <li><a href="https://modelcontextprotocol.io/docs">Model Context Protocol Specification</a> - 2024 - Anthropic - Official specification defining the MCP standard for connecting LLMs to external resources</li>
 <li><a href="https://docs.anthropic.com/claude/docs/mcp">Building Secure AI Integrations with MCP</a> - 2024 - Anthropic Documentation - Practical guide for implementing secure LLM integrations using MCP</li>
 <li><a href="https://github.com/modelcontextprotocol/servers">MCP Server Examples and Best Practices</a> - 2024 - GitHub - Collection of reference implementations and patterns for MCP server development</li>
 </ol>
-<h2 id="4-fine-tuned-model-pattern">4. Fine-Tuned Model Pattern<a class="headerlink" href="#4-fine-tuned-model-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="4-fine-tuned-model-pattern">4. Fine-Tuned Model Pattern</h2>
 <p>A specialization pattern where a pre-trained Large Language Model is further trained on domain-specific data to improve performance for particular tasks or domains. This pattern creates specialized models that understand domain-specific terminology, follow specific formats, or exhibit particular behaviors.</p>
-<h3 id="when-to-use_4">When to Use<a class="headerlink" href="#when-to-use_4" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_4">When to Use</h3>
 <p>Use this pattern when you need models to understand specialized domain knowledge, follow specific output formats consistently, or when RAG doesn't provide sufficient performance improvements. Ideal for highly specialized domains like legal, medical, or technical fields where domain expertise is critical and consistent behavior is required.</p>
-<h3 id="architecture-drawing_4">Architecture Drawing<a class="headerlink" href="#architecture-drawing_4" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_4">Architecture Drawing</h3>
 <p>The architecture illustrates the fine-tuning pipeline from data preparation through model training to deployment, with ongoing monitoring and evaluation components.</p>
 <p><strong>Components:</strong>
 - Training Data Repository (100, 50)
@@ -1202,19 +1234,19 @@
 - Inference Service → User Applications: "Model Predictions"
 - Performance Monitor → Model Registry: "Performance Metrics"
 - User Applications → Performance Monitor: "Usage Analytics"</p>
-<h3 id="related-patterns_4">Related Patterns<a class="headerlink" href="#related-patterns_4" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_4">Related Patterns</h3>
 <p>RAG Pattern, Model Versioning Pattern, A/B Testing Pattern</p>
-<h3 id="references_3">References<a class="headerlink" href="#references_3" title="Permanent link">&para;</a></h3>
+<h3 id="references_3">References</h3>
 <ol>
 <li><a href="https://arxiv.org/abs/2106.09685">Parameter-Efficient Fine-Tuning of Large Language Models</a> - 2021 - arXiv - Comprehensive survey of efficient fine-tuning methods including LoRA and prefix tuning</li>
 <li><a href="https://arxiv.org/abs/1909.08593">Fine-Tuning Language Models from Human Preferences</a> - 2019 - arXiv - Methodology for fine-tuning models using human feedback and preference learning</li>
 <li><a href="https://aclanthology.org/2020.findings-emnlp.212/">Domain-Adaptive Fine-Tuning for Neural Machine Translation</a> - 2020 - ACL - Best practices for adapting pre-trained models to specific domains and tasks</li>
 </ol>
-<h2 id="5-federated-learning-pattern">5. Federated Learning Pattern<a class="headerlink" href="#5-federated-learning-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="5-federated-learning-pattern">5. Federated Learning Pattern</h2>
 <p>A distributed learning pattern that enables multiple organizations or departments to collaboratively train AI models without sharing raw data. This pattern maintains data privacy and security while leveraging collective knowledge across organizational boundaries.</p>
-<h3 id="when-to-use_5">When to Use<a class="headerlink" href="#when-to-use_5" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_5">When to Use</h3>
 <p>Use this pattern when multiple parties want to benefit from shared AI models but cannot share sensitive data due to privacy, regulatory, or competitive concerns. Essential for healthcare consortiums, financial institutions, and cross-organizational collaborations where data governance is critical.</p>
-<h3 id="architecture-drawing_5">Architecture Drawing<a class="headerlink" href="#architecture-drawing_5" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_5">Architecture Drawing</h3>
 <p>The architecture shows multiple participating organizations with local training capabilities connected through a central aggregation server that coordinates model updates without accessing raw data.</p>
 <p><strong>Components:</strong>
 - Central Aggregation Server (400, 100)
@@ -1238,19 +1270,19 @@
 - Local Data B → Organization B Trainer: "Training Data"
 - Local Data C → Organization C Trainer: "Training Data"
 - Security Controller → Central Aggregation Server: "Privacy Validation"</p>
-<h3 id="related-patterns_5">Related Patterns<a class="headerlink" href="#related-patterns_5" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_5">Related Patterns</h3>
 <p>Privacy-Preserving AI Pattern, Multi-Tenant Architecture Pattern, Distributed Training Pattern</p>
-<h3 id="references_4">References<a class="headerlink" href="#references_4" title="Permanent link">&para;</a></h3>
+<h3 id="references_4">References</h3>
 <ol>
 <li><a href="https://arxiv.org/abs/1602.05629">Communication-Efficient Learning of Deep Networks from Decentralized Data</a> - 2016 - arXiv - Foundational paper introducing federated learning and its communication-efficient algorithms</li>
 <li><a href="https://arxiv.org/abs/1908.07873">Federated Learning: Challenges, Methods, and Future Directions</a> - 2019 - arXiv - Comprehensive survey of federated learning challenges and solutions in practice</li>
 <li><a href="https://www.nature.com/articles/s41746-021-00489-2">Privacy-Preserving Federated Learning in Healthcare</a> - 2021 - Nature Digital Medicine - Real-world applications of federated learning in healthcare with privacy considerations</li>
 </ol>
-<h2 id="6-multi-modal-ai-pattern">6. Multi-Modal AI Pattern<a class="headerlink" href="#6-multi-modal-ai-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="6-multi-modal-ai-pattern">6. Multi-Modal AI Pattern</h2>
 <p>An integration pattern that combines multiple types of AI models to process different data modalities (text, images, audio, video) within a single application. This pattern enables more comprehensive understanding and generation across various media types.</p>
-<h3 id="when-to-use_6">When to Use<a class="headerlink" href="#when-to-use_6" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_6">When to Use</h3>
 <p>Use this pattern when applications need to understand or generate content across multiple media types, when context spans different modalities, or when you need to provide rich, multimedia responses. Essential for content creation platforms, educational systems, and comprehensive document analysis applications.</p>
-<h3 id="architecture-drawing_6">Architecture Drawing<a class="headerlink" href="#architecture-drawing_6" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_6">Architecture Drawing</h3>
 <p>The architecture demonstrates multiple specialized models for different modalities coordinated through a central fusion engine that combines insights and generates multi-modal responses.</p>
 <p><strong>Components:</strong>
 - User Interface (300, 50)
@@ -1274,19 +1306,19 @@
 - Response Generator → User Interface: "Multi-Modal Response"
 - Vector Store → Multi-Modal Fusion Engine: "Cross-Modal Context"
 - Context Manager → Multi-Modal Fusion Engine: "Session Context"</p>
-<h3 id="related-patterns_6">Related Patterns<a class="headerlink" href="#related-patterns_6" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_6">Related Patterns</h3>
 <p>RAG Pattern, Content Generation Pipeline Pattern, Unified Embedding Pattern</p>
-<h3 id="references_5">References<a class="headerlink" href="#references_5" title="Permanent link">&para;</a></h3>
+<h3 id="references_5">References</h3>
 <ol>
 <li><a href="https://arxiv.org/abs/2204.14198">Flamingo: a Visual Language Model for Few-Shot Learning</a> - 2022 - arXiv - Breakthrough model demonstrating effective multi-modal learning with few-shot capabilities</li>
 <li><a href="https://arxiv.org/abs/2103.00020">CLIP: Learning Transferable Visual Representations from Natural Language Supervision</a> - 2021 - arXiv - Foundational work on joint vision-language understanding and cross-modal retrieval</li>
 <li><a href="https://arxiv.org/abs/2209.14792">Make-A-Video: Text-to-Video Generation without Text-Video Data</a> - 2022 - arXiv - Advanced multi-modal generation combining text understanding with video creation capabilities</li>
 </ol>
-<h2 id="7-enterprise-security-gateway-pattern">7. Enterprise Security Gateway Pattern<a class="headerlink" href="#7-enterprise-security-gateway-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="7-enterprise-security-gateway-pattern">7. Enterprise Security Gateway Pattern</h2>
 <p>A security-focused pattern that provides centralized authentication, authorization, and monitoring for all AI service interactions within an enterprise. This pattern ensures compliance, audit trails, and proper access controls across all generative AI applications.</p>
-<h3 id="when-to-use_7">When to Use<a class="headerlink" href="#when-to-use_7" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_7">When to Use</h3>
 <p>Use this pattern in enterprise environments with strict security requirements, regulatory compliance needs, or when multiple AI services need consistent security policies. Essential for financial services, healthcare, government, and other highly regulated industries.</p>
-<h3 id="architecture-drawing_7">Architecture Drawing<a class="headerlink" href="#architecture-drawing_7" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_7">Architecture Drawing</h3>
 <p>The architecture shows all AI service requests flowing through a centralized security gateway that handles authentication, authorization, logging, and compliance before routing to appropriate AI services.</p>
 <p><strong>Components:</strong>
 - User Applications (200, 50)
@@ -1310,19 +1342,19 @@
 - Security Gateway → Audit Logger: "Request Log"
 - Audit Logger → Compliance Monitor: "Audit Trail"
 - Compliance Monitor → Security Gateway: "Policy Updates"</p>
-<h3 id="related-patterns_7">Related Patterns<a class="headerlink" href="#related-patterns_7" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_7">Related Patterns</h3>
 <p>MCP Integration Pattern, Zero Trust Architecture Pattern, API Management Pattern</p>
-<h3 id="references_6">References<a class="headerlink" href="#references_6" title="Permanent link">&para;</a></h3>
+<h3 id="references_6">References</h3>
 <ol>
 <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> - 2023 - NIST - Comprehensive framework for managing AI risks in enterprise environments</li>
 <li><a href="https://cloud.google.com/security/ai-ml">Enterprise AI Security Best Practices</a> - 2024 - Google Cloud - Practical guide for securing AI/ML workloads in enterprise cloud environments</li>
 <li><a href="https://www.cisa.gov/sites/default/files/publications/CISA_Zero_Trust_Maturity_Model_v2.0.pdf">Zero Trust Architecture for AI Systems</a> - 2023 - CISA - Government guidance on implementing zero trust principles for AI system security</li>
 </ol>
-<h2 id="8-model-versioning-and-ab-testing-pattern">8. Model Versioning and A/B Testing Pattern<a class="headerlink" href="#8-model-versioning-and-ab-testing-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="8-model-versioning-and-ab-testing-pattern">8. Model Versioning and A/B Testing Pattern</h2>
 <p>A deployment pattern that manages multiple versions of AI models simultaneously, enabling controlled rollouts, performance comparisons, and gradual migrations. This pattern supports experimentation and risk mitigation in production AI systems.</p>
-<h3 id="when-to-use_8">When to Use<a class="headerlink" href="#when-to-use_8" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_8">When to Use</h3>
 <p>Use this pattern when you need to test new model versions safely, compare performance between different approaches, or gradually roll out model updates. Essential for production systems where model changes need validation and when business impact needs to be measured systematically.</p>
-<h3 id="architecture-drawing_8">Architecture Drawing<a class="headerlink" href="#architecture-drawing_8" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_8">Architecture Drawing</h3>
 <p>The architecture illustrates a traffic routing system that directs requests to different model versions based on configured rules, with comprehensive monitoring and comparison capabilities.</p>
 <p><strong>Components:</strong>
 - User Requests (250, 50)
@@ -1347,19 +1379,19 @@
 - Performance Monitor → Metrics Collector: "Performance Data"
 - Metrics Collector → Results Analyzer: "Aggregated Metrics"
 - Model Registry → Traffic Router: "Available Models"</p>
-<h3 id="related-patterns_8">Related Patterns<a class="headerlink" href="#related-patterns_8" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_8">Related Patterns</h3>
 <p>Fine-Tuned Model Pattern, Blue-Green Deployment Pattern, Performance Monitoring Pattern</p>
-<h3 id="references_7">References<a class="headerlink" href="#references_7" title="Permanent link">&para;</a></h3>
+<h3 id="references_7">References</h3>
 <ol>
 <li><a href="https://arxiv.org/abs/2006.10254">Continuous Integration and Deployment for Machine Learning</a> - 2020 - arXiv - Comprehensive guide to CI/CD practices specifically for machine learning systems</li>
 <li><a href="https://www.uber.com/blog/experimentation-platform/">A/B Testing for Machine Learning Models</a> - 2018 - Uber Engineering - Real-world implementation of A/B testing infrastructure for ML models at scale</li>
 <li><a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">MLOps: Continuous Delivery and Automation Pipelines in Machine Learning</a> - 2021 - Google Cloud - Best practices for model versioning and automated deployment pipelines</li>
 </ol>
-<h2 id="9-prompt-engineering-and-template-management-pattern">9. Prompt Engineering and Template Management Pattern<a class="headerlink" href="#9-prompt-engineering-and-template-management-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="9-prompt-engineering-and-template-management-pattern">9. Prompt Engineering and Template Management Pattern</h2>
 <p>A governance pattern that centralizes prompt design, versioning, and optimization across an organization. This pattern ensures consistency, enables prompt reuse, and provides systematic approaches to prompt improvement and testing.</p>
-<h3 id="when-to-use_9">When to Use<a class="headerlink" href="#when-to-use_9" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_9">When to Use</h3>
 <p>Use this pattern when multiple teams are using similar prompts, when you need consistent prompt quality across applications, or when prompt performance optimization is critical. Essential for large organizations with multiple AI applications and when prompt intellectual property needs protection.</p>
-<h3 id="architecture-drawing_9">Architecture Drawing<a class="headerlink" href="#architecture-drawing_9" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_9">Architecture Drawing</h3>
 <p>The architecture shows a centralized prompt management system that stores, versions, and optimizes prompts, with testing capabilities and integration points for various applications.</p>
 <p><strong>Components:</strong>
 - Prompt Repository (300, 50)
@@ -1381,19 +1413,19 @@
 - Performance Analyzer → Metrics Dashboard: "Analysis Results"
 - Application Integration → Template Engine: "Prompt Requests"
 - Metrics Dashboard → Prompt Designer Interface: "Optimization Insights"</p>
-<h3 id="related-patterns_9">Related Patterns<a class="headerlink" href="#related-patterns_9" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_9">Related Patterns</h3>
 <p>Model Versioning Pattern, Content Generation Pipeline Pattern, Quality Assurance Pattern</p>
-<h3 id="references_8">References<a class="headerlink" href="#references_8" title="Permanent link">&para;</a></h3>
+<h3 id="references_8">References</h3>
 <ol>
 <li><a href="https://arxiv.org/abs/2201.11903">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</a> - 2022 - arXiv - Foundational research on structured prompting techniques for improved reasoning</li>
 <li><a href="https://arxiv.org/abs/2212.08073">Constitutional AI: Harmlessness from AI Feedback</a> - 2022 - Anthropic - Advanced prompting techniques for building more helpful, harmless, and honest AI systems</li>
 <li><a href="https://www.promptingguide.ai/">Prompt Engineering Guide</a> - 2023 - Community Resource - Comprehensive collection of prompt engineering techniques and best practices</li>
 </ol>
-<h2 id="10-real-time-streaming-ai-pattern">10. Real-Time Streaming AI Pattern<a class="headerlink" href="#10-real-time-streaming-ai-pattern" title="Permanent link">&para;</a></h2>
+<h2 id="10-real-time-streaming-ai-pattern">10. Real-Time Streaming AI Pattern</h2>
 <p>A data processing pattern that applies AI models to continuous data streams in real-time, enabling immediate responses and continuous learning from streaming data sources. This pattern supports low-latency AI applications that need to process data as it arrives.</p>
-<h3 id="when-to-use_10">When to Use<a class="headerlink" href="#when-to-use_10" title="Permanent link">&para;</a></h3>
+<h3 id="when-to-use_10">When to Use</h3>
 <p>Use this pattern for applications requiring immediate AI responses to streaming data, real-time decision making, or continuous model adaptation. Essential for fraud detection, real-time personalization, IoT analytics, and live content moderation systems.</p>
-<h3 id="architecture-drawing_10">Architecture Drawing<a class="headerlink" href="#architecture-drawing_10" title="Permanent link">&para;</a></h3>
+<h3 id="architecture-drawing_10">Architecture Drawing</h3>
 <p>The architecture depicts streaming data flowing through real-time processing engines with AI models that can make immediate decisions and optionally trigger actions or updates.</p>
 <p><strong>Components:</strong>
 - Data Sources (100, 50)
@@ -1417,9 +1449,9 @@
 - Decision Engine → Action Triggers: "Automated Actions"
 - Stream Processor A → State Store: "State Updates"
 - AI Model Service → Monitoring Dashboard: "Performance Metrics"</p>
-<h3 id="related-patterns_10">Related Patterns<a class="headerlink" href="#related-patterns_10" title="Permanent link">&para;</a></h3>
+<h3 id="related-patterns_10">Related Patterns</h3>
 <p>Event-Driven Architecture Pattern, Lambda Architecture Pattern, Edge Computing Pattern</p>
-<h3 id="references_9">References<a class="headerlink" href="#references_9" title="Permanent link">&para;</a></h3>
+<h3 id="references_9">References</h3>
 <ol>
 <li><a href="https://www.confluent.io/blog/build-deploy-scalable-machine-learning-production-apache-kafka/">Stream Processing with Apache Kafka and Machine Learning</a> - 2020 - Confluent - Practical guide for implementing real-time ML with streaming platforms</li>
 <li><a href="https://eng.uber.com/michelangelo-machine-learning-platform/">Real-Time Machine Learning Inference at Scale</a> - 2017 - Uber Engineering - Case study of large-scale real-time ML inference architecture</li>
@@ -1431,6 +1463,9 @@
 
 
 
+
+  
+  
 
 
 

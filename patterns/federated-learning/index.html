@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="A collection of architectural patterns and concepts for building applications with generative AI.">
       
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/genai-arch-patterns/patterns/federated-learning/">
       
       
         <link rel="prev" href="../fine-tuned-model/">
@@ -58,6 +64,32 @@
   
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Federated Learning - Generative AI Architecture Patterns" >
+      
+        <meta  property="og:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/federated-learning/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/genai-arch-patterns/patterns/federated-learning/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Federated Learning - Generative AI Architecture Patterns" >
+      
+        <meta  name="twitter:description"  content="A collection of architectural patterns and concepts for building applications with generative AI." >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/genai-arch-patterns/assets/images/social/patterns/federated-learning/index.png" >
+      
     
     
   </head>
@@ -848,11 +880,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge-representation/" class="md-nav__link">
+      <a href="../learning-graph.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Knowledge Representation
+    Learning Graph
   </span>
   
 
@@ -1249,11 +1281,11 @@
   
 
 
-<h1 id="federated-learning-pattern">Federated Learning Pattern<a class="headerlink" href="#federated-learning-pattern" title="Permanent link">&para;</a></h1>
+<h1 id="federated-learning-pattern">Federated Learning Pattern</h1>
 <p>A distributed learning pattern that enables multiple organizations or departments to collaboratively train AI models without sharing raw data. This pattern maintains data privacy and security while leveraging collective knowledge across organizational boundaries.</p>
-<h2 id="when-to-use">When to Use<a class="headerlink" href="#when-to-use" title="Permanent link">&para;</a></h2>
+<h2 id="when-to-use">When to Use</h2>
 <p>Use this pattern when multiple parties want to benefit from shared AI models but cannot share sensitive data due to privacy, regulatory, or competitive concerns. Essential for healthcare consortiums, financial institutions, and cross-organizational collaborations where data governance is critical.</p>
-<h2 id="architecture-drawing">Architecture Drawing<a class="headerlink" href="#architecture-drawing" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-drawing">Architecture Drawing</h2>
 <p>The architecture shows multiple participating organizations with local training capabilities connected through a central aggregation server that coordinates model updates without accessing raw data.</p>
 <p><strong>Components:</strong>
 - Central Aggregation Server (400, 100)
@@ -1277,9 +1309,9 @@
 - Local Data B → Organization B Trainer: "Training Data"
 - Local Data C → Organization C Trainer: "Training Data"
 - Security Controller → Central Aggregation Server: "Privacy Validation"</p>
-<h2 id="related-patterns">Related Patterns<a class="headerlink" href="#related-patterns" title="Permanent link">&para;</a></h2>
+<h2 id="related-patterns">Related Patterns</h2>
 <p>Privacy-Preserving AI Pattern, Multi-Tenant Architecture Pattern, Distributed Training Pattern</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h2 id="references">References</h2>
 <ol>
 <li><a href="https://arxiv.org/abs/1602.05629">Communication-Efficient Learning of Deep Networks from Decentralized Data</a> - 2016 - arXiv - Foundational paper introducing federated learning and its communication-efficient algorithms</li>
 <li><a href="https://arxiv.org/abs/1908.07873">Federated Learning: Challenges, Methods, and Future Directions</a> - 2019 - arXiv - Comprehensive survey of federated learning challenges and solutions in practice</li>
@@ -1291,6 +1323,9 @@
 
 
 
+
+  
+  
 
 
 
